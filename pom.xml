@@ -39,8 +39,8 @@
 		<!-- 오라클 드라이버 -->
 		<dependency>
  			<groupId>com.oracle</groupId>
- 			<artifactId>ojdbc8</artifactId>
-			<version>18.15</version>
+ 			<artifactId>ojdbc11</artifactId>
+			<version>21.6</version>
 		</dependency>
 		<!-- Spring -->
 		<dependency>
