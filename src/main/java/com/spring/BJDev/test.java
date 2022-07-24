@@ -7,6 +7,7 @@ public class test {
 	  	System.out.println("죽어..?");
 
 	  	int y=10;
+	  	int x = 20;
 
 	  	int bumjun = 10;
 	  	if(bumjun == 10) {
