@@ -1,0 +1,153 @@
+* {
+  text-decoration: none;
+  list-style: none;
+
+  font-family: "Gugi", cursive;
+}
+#top_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0%;
+  width: 100%;
+}
+#logo {
+  width: 10%;
+}
+/* 네브바 */
+#navBar {
+  background-color: blanchedalmond;
+  padding: 0% 1%;
+  margin: 0%;
+}
+#navBar *,
+#search_around * {
+  margin: 0px !important;
+  padding: 0px !important;
+  color: black;
+}
+#search_around {
+  margin-top: 1%;
+}
+#input_Text,
+#button_Text {
+  width: 100%;
+}
+#input_box,
+#button_box {
+  margin: 0% 1% !important;
+}
+#search_box > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 텍스트 */
+#menu_box > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 마이페이지 관련 */
+#myPage_box > * {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* 네브바 끝 */
+/* 검색 */
+#search_around {
+  margin: 0% !important;
+}
+/* 상단 이미지 */
+#main_imageBox {
+  height: 50vh;
+  margin: 0%;
+  margin-top: 2%;
+}
+#main_image {
+  height: 100%;
+  padding: 0%;
+}
+/* 상단 이미지끜 */
+/* 신간 */
+#new_text,
+#best_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 2% 0%;
+}
+/* 실시간 채팅 */
+#real_chat * {
+  margin: 0px !important;
+  padding: 0% !important;
+}
+#real_chat {
+  border-radius: 10px;
+  padding: 0px;
+  border: 2px solid black;
+}
+#real_nav {
+  background-color: blanchedalmond;
+}
+#nav_ico {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+/* 채팅치는 부분 */
+#real_chatItems {
+  background-color: white;
+  min-height: 50vh;
+  padding: 0% 5% !important;
+}
+#item_ico {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+#item_content {
+  border: 2px solid black;
+  margin: 1% 10% !important;
+
+  word-break: break-all;
+  width: auto;
+}
+
+#chat_item_right {
+  justify-content: end;
+}
+/* 실시간 채팅 버튼 */
+#real_chatSum {
+  display: flex;
+  align-items: flex-end;
+
+  flex-direction: column;
+  position: fixed;
+  bottom: 1%;
+  right: 5%;
+  z-index: 1;
+}
+#button_box {
+  margin: 5% 0% !important;
+}
+/* 실시간 채팅 박스 */
+#real_chat {
+  z-index: 1;
+  border: 7px solid black;
+}
+
+/* etc */
+
+.input-group {
+  background-color: white;
+}
+.hide {
+  display: none;
+}
