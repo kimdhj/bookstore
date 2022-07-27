@@ -4,6 +4,7 @@
     --secondary: #F65005;
     --light: #F7F8FC;
     --dark: #111111;
+    --lightv2: #2979FF; /* 마이페이지 색상 추가 */
 }
 
 .back-to-top {
@@ -50,6 +51,7 @@
     font-weight: 500;
   
 }
+
 
 .btn.btn-primary,
 .btn.btn-secondary,
