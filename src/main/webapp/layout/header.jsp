@@ -28,12 +28,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <!-- 은지 css -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- 은지 css -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
-
 </head>
 
 <body>
@@ -124,7 +124,7 @@
                     <p id="search_btn" class="btn-sm-square bg-white rounded-circle ms-3" href="">
                         <small class="fa fa-search text-body"></small>
                     </p>
-                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="purchaseList.jsp">
                         <small class="fa fa-user text-body"></small>
                     </a>
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
