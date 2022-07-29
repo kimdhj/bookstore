@@ -58,6 +58,11 @@
 					놀러오슈~
 				</p>
 			</div>
+			<div class="row">
+				<p id="info_description">
+					낭만서점 기능 ?
+				</p>
+			</div>
 
 			<!-- 지도 API -->
 			<div class="row">
