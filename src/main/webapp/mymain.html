@@ -121,41 +121,43 @@
             <div class="row g-5 justify-content-center">
             	<div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
             		<div class="bg-light text-black d-flex flex-column justify-content-center h-100 p-3">
+            			
             			<!-- 메인페이지 헤더 내용 -->
             			<div class="container">
 						  <div class="row">
-						    <div class="col">
-						      <!-- 회원정보 -->
-						      김동현
-								<nav aria-label="breadcrumb">
-								  <ol class="breadcrumb">
-								    <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
-								    <li class="breadcrumb-item active" aria-current="page">구독중</li>
-								  </ol>
-								</nav>
-								<!-- 회원정보 끝 -->
-						    </div>
-						    <div class="col">
-						      	<!-- 할인쿠폰 -->
-						      	할인쿠폰
-								<nav aria-label="breadcrumb">
-								  <ol class="breadcrumb">
-								    <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
-								    <li class="breadcrumb-item active" aria-current="page">22장</li>
-								  </ol>
-								</nav>
-								<!-- 할인쿠폰 끝 -->
-						    </div>
-						    <div class="col">
-						      	<!-- 마일리지 -->
-						      	마일리지
-								<nav aria-label="breadcrumb">
-								  <ol class="breadcrumb">
-								    <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
-								    <li class="breadcrumb-item active" aria-current="page">239,132,110P</li>
-								  </ol>
-								</nav>
-								<!-- 마일리지 끝 -->
+						  	<div class="col-3">
+						  		
+						  	</div>
+						    <div class="row col-9">
+						     	<div class="col-4">
+						     		<div class="container">	
+					  					<div class="row justify-content-center">
+						     				<div class="col-md-auto align-self-center">
+									     		<a class="fs-4 text-dark">이승재 님
+						     						
+						     					</a>
+						     				</div>
+						     			</div>
+						     		</div>
+						     	</div>
+						     	<div class="col-4">
+						     		<div class="container">	
+					  					<div class="row justify-content-center">
+						     				<div class="col-md-auto align-self-center">
+									     		<a class="fs-6 text-dark">할인쿠폰</a>&nbsp;&nbsp;<a href="" class="">22</a>장
+						     				</div>
+						     			</div>
+						     		</div>
+						     	</div>
+						     	<div class="col-4">
+						     		<div class="container">	
+					  					<div class="row justify-content-center">
+						     				<div class="col-md-auto align-self-center">
+									     		<a class="fs-6 text-dark">마일리지</a>&nbsp;&nbsp;<a href="" class="">223,421,123</a>P
+						     				</div>
+						     			</div>
+						     		</div>
+						     	</div>
 						    </div>
 						  </div>
 						</div>
@@ -193,9 +195,7 @@
 							</button>
 							<ul class="dropdown-menu">
 							    <!-- Dropdown menu links -->
-							    <li><button class="dropdown-item" type="button">할인쿠폰</button></li>
-							    <li><button class="dropdown-item" type="button">마일리지</button></li>
-							    <li><button class="dropdown-item" type="button">예치금</button></li>
+							    <li><button class="dropdown-item" type="button">할인쿠폰/마일리지</button></li>
 							</ul>
 						</div><br><br><br>
 						<div class="btn-group dropend">
@@ -207,7 +207,6 @@
 							</button>
 							<ul class="dropdown-menu">
 							    <!-- Dropdown menu links -->
-							    <li><button class="dropdown-item" type="button">독서기록</button></li>
 							    <li><button class="dropdown-item" type="button">관심작가</button></li>
 							    <li><button class="dropdown-item" type="button">나의리뷰</button></li>
 							</ul>
@@ -243,8 +242,12 @@
 						<!-- 슬립 드롭다운 끝 -->
                     </div>
                 </div>
+                <!-- 우측하단 시작 -->
                 <div class="col-lg-9 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <p class="mb-4">여기가 정보페이지</p>
+                	<br>
+                    <p class="mb-4 fs-5 fw-bold"><img src="img/mypage_mainbtn.png" class="rounded float-start" alt="...">&nbsp;주문/배송조회
+                    	<button type="button" class="btn btn-secondary btn-sm float-end">구독취소</button>
+                    </p>
    	             	<!-- 나의 최근 주문현황 -->
                     <div class="container">
 					  <div class="row justify-content-center">
@@ -283,15 +286,15 @@
 					    </div>
 					    <div class="col-md-auto">
 					      	<ul class="list-group list-group-flush">
-							  <li class="list-group-item">취소</li>
-							  <li class="list-group-item">교환</li>
-							  <li class="list-group-item">반품</li>
+							  <li class="list-group-item">-취소</li>
+							  <li class="list-group-item">-교환</li>
+							  <li class="list-group-item">-반품</li>
 							</ul>
 					    </div>
 					  </div>
 					</div>
                     <!-- 나의 최근 주문현황 끝 -->                    
-                    <!-- 공통테이블 -->
+                    <!-- 주문내용 테이블 끝 -->
                     <div class="table-responsive">
 					  <table class="table ">
 					    <thead>
@@ -331,22 +334,53 @@
 						  </tbody>
 					  </table>
 					</div>
-                    <!-- 공통테이블 끝 -->
+					<!-- 페이징 -->
+					<div class="container">
+					  <div class="row justify-content-center">
+					  	<div class="col-md-auto align-self-center">
+					      	<button type="button" class="btn btn-dark btn-sm">처음</button>
+					    </div>
+					  	<div class="col-md-auto align-self-center">
+					      	<button type="button" class="btn btn-dark btn-sm">이전</button>
+					    </div>
+					    &nbsp;&nbsp;&nbsp;&nbsp;
+					  	<div class="col-md-auto align-self-center">
+					      	<button type="button" class="btn btn-dark btn-sm">다음</button>
+					    </div>
+					  	<div class="col-md-auto align-self-center">
+					      	<button type="button" class="btn btn-dark btn-sm">끝</button>
+					    </div>						
+					  </div>
+					</div>
+					<!-- 페이징 끝 -->
+					<br><br>
+                    <!-- 주문내용 테이블 끝 -->
+                    <!-- 안내테이블 -->
+                    <table class="table">
+					  <thead class="table-light">
+					    <th scope="col"><img src="img/mypage_warning.png" class="rounded float-first" alt="...">&nbsp;안내사항</th>
+					  </thead>
+					  <tbody>
+					    <tr>
+					    	<td>
+					    		<ul>
+					    			<li>한 번 주문하신 상품은 취소 교환 환불이 되지 않습니다.</li>
+					    			<li>주문정보 수정은 불가합니다</li>
+					    			<li>구독 취소버튼은 이용 불가합니다</li>
+					    			<li>적립된 마일리지는 사용할 수 없습니다</li>
+					    		</ul>
+					    	</td>
+					    </tr>
+					  </tbody>
+					</table>
+					<!-- 안내테이블 끝 -->
                 </div>
+                <!-- 우측하단 끝 -->
             </div>
             <!-- 마이페이지 메인 바디 끝 -->
         </div>
     </div>
     <!-- Contact End -->
-
-
-    <!-- Google Map Start -->
-    <div class="container-xxl px-0 wow fadeIn" data-wow-delay="0.1s" style="margin-bottom: -6px;">
-        <iframe class="w-100" style="height: 450px;"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <!-- Google Map End -->
 
 
     <!-- Footer Start -->
