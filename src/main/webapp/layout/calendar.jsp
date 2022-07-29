@@ -16,8 +16,11 @@
     </div><br /><br /><br />
 </body>
 <script>
-    $("#datepicker").datepicker({
-    	language: 'ko'
-    }); 
+$(function(){
+	  $("#datepicker").datepicker({
+	    	language: 'ko'
+	    }); 
+})
+  
 </script>
 </html>

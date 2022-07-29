@@ -4,14 +4,17 @@
 <%@ include file="header.jsp"%>
 <head>
 
-<link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
-<script src="./datepicker/js/datepicker.js"></script>
-<script src="./datepicker/js/datepicker.ko.js"></script>
+ <link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
+ <!-- Air datepicker css -->
+ <script src="./datepicker/js/datepicker.js"></script> <!-- Air datepicker js -->
+ <script src="./datepicker/js/datepicker.ko.js"></script> <!-- 달력 한글 추가를 위해 커스텀 -->
 <link href="./purchaseList_style.css" rel="stylesheet">
 <script>
-    $("#datepicker").datepicker({
-    	language: 'ko'
-    }); 
+$(function(){
+	  $("#datepicker").datepicker({
+	    	language: 'ko'
+	    }); 
+})
 </script>
 </head>
 <!-- 구매 목록 -->
