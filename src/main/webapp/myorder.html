@@ -29,6 +29,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css?ver=2" rel="stylesheet">
+    
+    <!-- DatePicker -->
+    
+	
+
+    
 </head>
 
 <body>
@@ -293,7 +299,49 @@
 					    </div>
 					  </div>
 					</div>
-                    <!-- 배송정보 끝 -->                    
+                    <!-- 배송정보 끝 -->
+
+                    <!-- 기간조회 및 조건검색 -->
+                    <div class="container">
+					  <div class="row">
+					    <div class="col-sm-10">
+					      <div class="row row-cols-2">
+						    <div class="col-2">Column</div>
+						    <div class="col-10">
+						    	<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+								  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+								  <label class="btn btn-light btn-outline-dark btn-sm" for="btnradio1">1주일</label>
+								
+								  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+								  <label class="btn btn-light btn-outline-dark btn-sm" for="btnradio2">1개월</label>
+								
+								  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+								  <label class="btn btn-light btn-outline-dark btn-sm" for="btnradio3">3개월</label>
+
+								  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+								  <label class="btn btn-light btn-outline-dark btn-sm" for="btnradio3">6개월</label>
+								  
+								  <!-- DatePicker -->
+  								  
+  								  
+
+								  <!-- DatePicker 끝 -->
+									
+								</div>
+						    </div>
+						    <div class="col-2">Column</div>
+						    <div class="col-10"></div>
+						  </div>
+					    </div>
+					    <div class="col-sm-2">
+					      <a class="btn btn-primary" href="#" role="button">조회</a>
+					    </div>
+					  </div>
+					</div>
+                    
+					
+                    <!-- 기간조회 및 조건검색 끝 -->
+                                       
                     <!-- 나의 최근 주문현황 -->
                     <br>
                     2022-06-29 ~ 2022-07-28 까지의 주문 총 <a>0</a>건
@@ -357,26 +405,6 @@
 					<!-- 페이징 끝 -->
 					<br><br>
                     <!-- 나의 최근 주문현황 끝 -->
-                    <!-- 안내테이블 -->
-                    <table class="table">
-					  <thead class="table-light">
-					    <th scope="col"><img src="img/mypage_warning.png" class="rounded float-first" alt="...">&nbsp;안내사항</th>
-					  </thead>
-					  <tbody>
-					    <tr>
-					    	<td>
-					    		<ul>
-					    			<li>한 번 주문하신 상품은 취소 교환 환불이 되지 않습니다.</li>
-					    			<li>주문정보 수정은 불가합니다</li>
-					    			<li>구독 취소버튼은 이용 불가합니다</li>
-					    			<li>적립된 마일리지는 사용할 수 없습니다</li>
-					    		</ul>
-					    	</td>
-					    </tr>
-					  </tbody>
-					</table>
-					<!-- 안내테이블 끝 -->
-                </div>
                 <!-- 우측하단 끝 -->
             </div>
             <!-- 마이페이지 메인 바디 끝 -->
@@ -452,9 +480,13 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+	
+
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>
