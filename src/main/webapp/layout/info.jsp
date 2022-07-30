@@ -3,7 +3,7 @@
 <head>
     <link href="./info_style.css" rel="stylesheet">
 </head>
-<%@ include file="header.jsp" %>
+<%@ include file="./header.jsp" %>
 	<div class="row">
 		<div class="col-2"></div>
 		<div class="col-8">
@@ -52,4 +52,4 @@
 		</div>
 		<div class="col-2"></div>
 	</div>
-<%@ include file="footer.jsp" %>
+<%@ include file="./footer.jsp" %>
