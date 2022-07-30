@@ -14,6 +14,9 @@
     </div><br /><br /><br />
 </body>
 <script>
+
+  
+
     datePickerSet($("#datepicker1"), $("#datepicker2"), true); //다중은 시작하는 달력 먼저, 끝달력 2번째
     /*
         * 달력 생성기
@@ -89,5 +92,6 @@
                 return false;
         }
     }
+
 </script>
 </html>
