@@ -1,7 +1,6 @@
 #main_wrapper * {
   font-size: 1vw;
   font-weight: bolder;
-
   margin: 0px;
 }
 #order {
@@ -25,9 +24,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 0px;
 }
 #top_total * {
   font-size: 1vw;
+  padding: 0px;
 }
 #top_totalCount {
   display: flex;
