@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!-- Footer Start -->
+ <!-- Footer Start -->
     <div id="footer" class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="footer_row" class=" row container py-5">
             <div id="footer_des" class=" g-5">
@@ -59,6 +59,7 @@
     </div>
     <!-- Footer End -->
     <div class="fix">
+
         <!-- 실시간 -->
         <div class="col-4" id="real_chatSum">
             <div id="real_chat" class="col-12 hide">
@@ -131,7 +132,7 @@
     </div>
 
     <!-- JavaScript Libraries -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <!-- Template Javascript -->
@@ -558,6 +559,10 @@
             });
             search_btn
         });
+
+
     </script>
+
 </body>
+
 </html>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <head>
-<link href="./serviceCenter_style.css" rel="stylesheet">
+<link href="./css/serviceCenter_style.css" rel="stylesheet">
 <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
 <script>
 <!-- 주문/결제 -->
@@ -45,7 +45,7 @@ $(function () {
 });
 </script>
 </head>
-<%@ include file="header.jsp" %>
+<jsp:include page="./header.jsp"></jsp:include>
 <body>
 	<div class="row">
 		<div class="col-2"></div>
@@ -57,17 +57,17 @@ $(function () {
 			<div class="row" id="cs_line">
 				<div class="col-12 row" id="cs_faq">
 					<div class="col">
-						<img src="../layout/img/payment.png" width="50%"> <a href="#" id="img_payment">주문/결제</a>
+						<img src="./img/payment.png" width="50%"> <a href="#" id="img_payment">주문/결제</a>
 					</div>
 					<div class="col">
-						<img src="../layout/img/truck.png" width="50%"> <a href="#" id="img_delivery">배송/수령일
+						<img src="./img/truck.png" width="50%"> <a href="#" id="img_delivery">배송/수령일
 							안내</a>
 					</div>
 					<div class="col">
-						<img src="../layout/img/exchange.png" width="50%"> <a href="#" id="img_exchange">반품/교환/환불</a>
+						<img src="./img/exchange.png" width="50%"> <a href="#" id="img_exchange">반품/교환/환불</a>
 					</div>
 					<div class="col">
-						<img src="../layout/img/user.png" width="50%"> <a href="#" id="img_user">로그인</a>
+						<img src="./img/user.png" width="50%"> <a href="#" id="img_user">로그인</a>
 					</div>
 				</div>
 			</div>
@@ -234,4 +234,4 @@ $(function () {
 			</ul>
 		</nav>
 	</div>
-<%@ include file="footer.jsp" %>
+<jsp:include page="./footer.jsp"></jsp:include>

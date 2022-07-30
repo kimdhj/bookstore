@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <head>
-	<link href="./notice_style.css" rel="stylesheet">
+	<link href="./css/notice_style.css" rel="stylesheet">
 </head>	
-<%@ include file="header.jsp"%>
+<jsp:include page="./header.jsp"></jsp:include>
 <div class="row">
 	<div class="col-2"></div>
 
@@ -68,4 +68,4 @@
 		</ul>
 	</nav>
 </div>
-<%@ include file="footer.jsp"%>
+<jsp:include page="./footer.jsp"></jsp:include>

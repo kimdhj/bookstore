@@ -6,7 +6,7 @@
     <link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
     <script src="./datepicker/js/datepicker.js"></script> <!-- Air datepicker js -->
     <script src="./datepicker/js/datepicker.ko.js"></script> <!-- 달력 한글 추가를 위해 커스텀 -->
-	<link href="./purchaseList_style.css" rel="stylesheet">
+	<link href="./css/purchaseList_style.css" rel="stylesheet">
 <%@ include file="header.jsp"%>
 </head>
 

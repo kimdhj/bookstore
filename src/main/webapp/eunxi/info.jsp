@@ -1,16 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <head>
-    <link href="./info_style.css" rel="stylesheet">
+    <link href="./css/info_style.css" rel="stylesheet">
 </head>
-<%@ include file="./header.jsp" %>
+<jsp:include page="./header.jsp"></jsp:include>
 	<div class="row">
 		<div class="col-2"></div>
 		<div class="col-8">
 			<!-- 이미지 : 클릭하면 메인 혹은 소개 페이지로 이동하도록 넣어봤슈... -->
 			<div class="row">
 				<div id="img">
-					<a href="info.jsp"><img src="../layout/img/info2.png"
+					<a href="info.jsp"><img src="./img/info2.png"
 						style="display: block;" width="100%;" /></a>
 				</div>
 			</div>
@@ -52,4 +52,4 @@
 		</div>
 		<div class="col-2"></div>
 	</div>
-<%@ include file="./footer.jsp" %>
+<jsp:include page="./footer.jsp"></jsp:include>
