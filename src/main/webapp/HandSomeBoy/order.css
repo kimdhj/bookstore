@@ -81,6 +81,10 @@ img {
 #option_input {
   margin-top: 3%;
 }
+#day_calendar {
+  display: flex;
+  justify-content: center;
+}
 /* 하단 */
 #under_menu {
   margin-top: 2%;

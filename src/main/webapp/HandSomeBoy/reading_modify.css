@@ -67,6 +67,10 @@
 #rec_book {
   margin: 5% 0%;
 }
+/* 주소 */
+#addressEtc_line {
+  margin-top: 2%;
+}
 /* 장르 선택 */
 #selectType_title {
   width: auto;

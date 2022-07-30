@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style2.css" rel="stylesheet">
+    <link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all" defer>
     <link href="./order.css" rel="stylesheet">
 </head>
 
@@ -353,6 +354,10 @@
                             <div class="row" id="day_find">
                                 <div class="col-4" id="day_title">기간 조회</div>
                                 <div class="col-8 row" id="day_select">
+                                    <div id="day_calendar" class="col-5">
+                                        <input class="col-5" placeholder="시작날짜" type="text" id="start_date" />~<input
+                                            class="col-5" placeholder="마지막 날짜" type="text" id="end_date" />
+                                    </div>
                                     <div id="day_btn" class="col-7">
                                         <div id="dayAdd" class="btn-group me-2" role="group" aria-label="Second group">
                                             <button type="button" class="btn btn-secondary">1주일</button>
@@ -362,10 +367,7 @@
                                             <button type="button" class="btn btn-secondary">1년</button>
                                         </div>
                                     </div>
-                                    <div id="day_calendar" class="col-5">
-                                        <input class="col-5" type="date" id="start_date" />~<input class="col-5"
-                                            type="date" id="end_date" />
-                                    </div>
+
                                 </div>
                             </div>
                             <div class="row" id="option_find">
@@ -538,9 +540,21 @@
             <script src="lib/easing/easing.min.js"></script>
             <script src="lib/waypoints/waypoints.min.js"></script>
             <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+            <script src="./datepicker/js/datepicker.js" defer></script> <!-- Air datepicker js -->
+            <script src="./datepicker/js/datepicker.ko.js" defer></script> <!-- 달력 한글 추가를 위해 커스텀 -->
             <!-- Template Javascript -->
             <script src="js/main.js"></script>
+            <script>
+                $(function () {
+                    $("#start_date").datepicker({
+                        language: 'ko'
+                    });
+                    $("#end_date").datepicker({
+                        language: 'ko'
+                    });
+
+                })
+            </script>
 </body>
 
 </html>
