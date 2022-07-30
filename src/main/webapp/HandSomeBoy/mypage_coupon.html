@@ -31,7 +31,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style2.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="./reading_modify.css" rel="stylesheet">
+    <link href="./coupon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -145,6 +145,8 @@
         </form>
     </div>
     <!-- Navbar End -->
+
+
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
@@ -309,149 +311,155 @@
                         <button type="button" class="btn btn-secondary btn-sm float-end">구독취소</button>
                     </p>
                     <!-- 여기 삽입 -->
-                    <div id="main_wrapper" class="row">
-
-                        <div class="col">
-                            <div id="top_info" class="row">
-                                <div id="img_box" class="col-2">
-                                    <img src="./서점로고.ico" width="100%" height="100%" alt="" id="item_img" />
-                                </div>
-                                <div class="col" id="text">
-                                    <div class="row" id="title">
-                                        <div id="item_title" class="col-4 ">구독상품 이름</div>
-
+                    <div class="row" id="main_wrapper">
+                        <div class="row" id="under_menu">
+                            <div class="row" id="discount">
+                                <div class="row" id="top_sum">
+                                    <div class="col-auto" id="under_topText">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-ticket-perforated-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4-1v1h1v-1H4Zm1 3v-1H4v1h1Zm7 0v-1h-1v1h1Zm-1-2h1v-1h-1v1Zm-6 3H4v1h1v-1Zm7 1v-1h-1v1h1Zm-7 1H4v1h1v-1Zm7 1v-1h-1v1h1Zm-8 1v1h1v-1H4Zm7 1h1v-1h-1v1Z" />
+                                        </svg>
+                                        할인쿠폰
                                     </div>
-                                    <div class="row" id="subtitle">월 결제 금액:20000원</div>
-                                    <div class="row" id="itemtText">
-                                        상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개상품소개
-                                    </div>
-                                </div>
-                                <div class="col-2"></div>
-                            </div>
-                            <div id="personal_info" class="row">
-                                <div id="months">
-                                    <div id="months_name">이승재님</div>
-                                    <div id="months_count">10</div>
-                                    <div id="months_etc">개월 째 이용 중 입니다.</div>
-                                </div>
-                                <div id="money">
-                                    <div id="money_title">지금 까지 결제 금액:</div>
-                                    <div id="money_count">20000 원</div>
-
-                                </div>
-                                <div id="nowBook">
-                                    <div id="nowBook_title">현재 대여책:</div>
-                                    <div id="nowBook_content">오늘도 놀고 싶다</div>
-                                </div>
-                                <div id="nextBook">
-                                    <div id="nowBook_title">현재 대여책:</div>
-                                    <div id="nowBook_content">오늘도 놀고 싶다</div>
-                                </div>
-
-                                <form id="zipCode" class="row g-3">
-                                    <div class="row" id="zipcode_line">
-                                        <div class="col-1">
-                                            <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
-                                                value="주소:">
-                                        </div>
-                                        <div class="col-auto">
-                                            <input readonly type="text" class="form-control" id="zipCode"
-                                                placeholder="우편번호">
-                                        </div>
-                                        <div class="col-auto">
-                                            <button type="submit" class="btn btn-primary mb-3">주소 찾기</button>
-                                        </div>
-                                    </div>
-                                    <div class="row" id="address_line">
-                                        <div class="col-1">
-                                        </div>
-                                        <div class="col-6">
-                                            <input readonly type="text" class="form-control" id="address"
-                                                placeholder="주소">
-                                        </div>
-                                    </div>
-                                    <div class="row" id="addressEtc_line">
-                                        <div class="col-1">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control" id="etc" placeholder="추가 주소">
-                                        </div>
-                                    </div>
-                                </form>
-
-                                <div id="selectType">
-                                    <div id="selectType_title">선택된 장르</div>
-                                    <div id="selectType_content">
-                                        <div class="row" id="select_items">
-                                            <div class="col-4" id="item_select">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
-                                                        무협
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="item_select">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
-                                                        무협
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="item_select">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
-                                                        무협
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="item_select">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
-                                                        무협
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="item_select">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
-                                                        무협
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-4" id="item_select">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckIndeterminate">
-                                                    <label class="form-check-label" for="flexCheckIndeterminate">
-                                                        무협
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                    <div class="col"></div>
+                                    <div class="col-auto">
+                                        <button id="coupon_add" type="button" class="btn btn-warning rounded-pill">쿠폰
+                                            추가</button>
                                     </div>
                                 </div>
-                                <div class="row g-2" id="btn_sumBox">
-                                    <button type="button" class="btn btn-success col-3">정보 수정</button>
-                                    <div class="col-1"></div>
-                                    <button type="button" class="btn btn-danger col-3">구독 취소</button>
+
+                                <div class="row" id="table">
+                                    <div id="table_title" class="row">
+                                        <div class="col-4">발행일</div>
+                                        <div class="col">쿠폰명</div>
+                                        <div class="col">할인</div>
+                                        <div class="col-1">수량</div>
+
+                                    </div>
+
+                                    <div id="table_item" class="row">
+                                        <div class="col-4">2022-11-17</div>
+                                        <div class="col">잘생김 주의</div>
+                                        <div class="col">101%</div>
+                                        <div class="col-1">100</div>
+                                    </div>
+                                    <div id="table_item" class="row">
+                                        <div class="col-4">2022-11-17</div>
+                                        <div class="col">잘생김 주의</div>
+                                        <div class="col">101%</div>
+                                        <div class="col-1">100</div>
+                                    </div>
+                                    <div id="table_item" class="row">
+                                        <div class="col-4">2022-11-17</div>
+                                        <div class="col">잘생김 주의</div>
+                                        <div class="col">101%</div>
+                                        <div class="col-1">100</div>
+                                    </div>
+                                    <div id="table_bottom" class="row">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
                                 </div>
                             </div>
+                            <div class="row" id="pointMoney">
 
+                                <div id="under_topText">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-ticket-perforated-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4-1v1h1v-1H4Zm1 3v-1H4v1h1Zm7 0v-1h-1v1h1Zm-1-2h1v-1h-1v1Zm-6 3H4v1h1v-1Zm7 1v-1h-1v1h1Zm-7 1H4v1h1v-1Zm7 1v-1h-1v1h1Zm-8 1v1h1v-1H4Zm7 1h1v-1h-1v1Z" />
+                                    </svg>
+                                    마일리지
+                                </div>
+
+
+
+                                <div class="row" id="table">
+                                    <div id="table_title" class="row">
+                                        <div class="col-3">일자</div>
+                                        <div class="col-3">내용</div>
+                                        <div class="col-3">적립금액</div>
+                                        <div class="col-3">사용금액</div>
+
+                                    </div>
+
+                                    <div id="table_item" class="row">
+                                        <div class="col-3">2022-11-17</div>
+                                        <div class="col-3">책 구매 사용</div>
+                                        <div class="col-3">12,500P</div>
+                                        <div class="col-3">-12,500P</div>
+
+                                    </div>
+                                    <div id="table_item" class="row">
+                                        <div class="col-3">2022-11-17</div>
+                                        <div class="col-3">책 구매 사용</div>
+                                        <div class="col-3">12,500P</div>
+                                        <div class="col-3">-12,500P</div>
+
+                                    </div>
+                                    <div id="table_item" class="row">
+                                        <div class="col-3">2022-11-17</div>
+                                        <div class="col-3">책 구매 사용</div>
+                                        <div class="col-3">12,500P</div>
+                                        <div class="col-3">-12,500P</div>
+
+                                    </div>
+                                    <div id="table_item" class="row">
+                                        <div class="col-3">2022-11-17</div>
+                                        <div class="col-3">책 구매 사용</div>
+                                        <div class="col-3">12,500P</div>
+                                        <div class="col-3">-12,500P</div>
+
+                                    </div>
+                                    <div id="table_bottom" class="row">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+
+                                </div>
+                            </div>
 
                         </div>
 
                     </div>
+
+
+
+
                 </div>
                 <!-- 우측하단 끝 -->
             </div>
@@ -461,7 +469,6 @@
     <!-- Contact End -->
 
 
-    <!-- Footer Start -->
     <div id="footer" class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="footer_row" class=" row container py-5">
             <div id="footer_des" class=" g-5">
@@ -591,7 +598,6 @@
         <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
                 class="bi bi-arrow-up"></i></a>
     </div>
-
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

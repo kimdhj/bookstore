@@ -30,6 +30,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style2.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="./reading_cancel_css.css" rel="stylesheet">
 </head>
 
@@ -56,11 +57,13 @@
                 <a class="text-body ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
                 <a class="text-body ms-3" href=""><i class="fab fa-instagram"></i></a>
             </div>
+
         </div>
 
         <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="fw-bold text-primary m-0">F<span class="text-secondary">oo</span>dy</h1>
+            <a href="index.html" id="logo" class="navbar-brand ms-4 ms-lg-0">
+                <img src="./서점로고.ico" alt="">
+                <h1 class="fw-bold text-primary m-0">낭<span class="text-secondary">만</span>서점</h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -68,24 +71,59 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="product.html" class="nav-item nav-link">Products</a>
+
+
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">공지사항</a>
                         <div class="dropdown-menu m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
+                            <a href="blog.html" class="dropdown-item">소개</a>
+                            <a href="feature.html" class="dropdown-item">공지사항</a>
+                            <a href="testimonial.html" class="dropdown-item">Q&A</a>
+
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">국내 도서</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">아동 서적</a>
+                            <a href="feature.html" class="dropdown-item">무협 서적</a>
+                            <a href="testimonial.html" class="dropdown-item">SF소설</a>
+                            <a href="404.html" class="dropdown-item">수필</a>
+                            <a href="404.html" class="dropdown-item">참고서</a>
+                            <a href="404.html" class="dropdown-item">문제집</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">외국도서</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">아동 서적</a>
+                            <a href="feature.html" class="dropdown-item">무협 서적</a>
+                            <a href="testimonial.html" class="dropdown-item">SF소설</a>
+                            <a href="404.html" class="dropdown-item">수필</a>
+                            <a href="404.html" class="dropdown-item">참고서</a>
+                            <a href="404.html" class="dropdown-item">문제집</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">신간</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">아동 서적</a>
+                            <a href="feature.html" class="dropdown-item">무협 서적</a>
+                            <a href="testimonial.html" class="dropdown-item">SF소설</a>
+                            <a href="404.html" class="dropdown-item">수필</a>
+                            <a href="404.html" class="dropdown-item">참고서</a>
+                            <a href="404.html" class="dropdown-item">문제집</a>
+                        </div>
+                    </div>
+                    <a href="product.html" class="nav-item nav-link">이벤트</a>
+                    <a href="product.html" class="nav-item nav-link">구독</a>
+
+
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
+                    <p id="search_btn" class="btn-sm-square bg-white rounded-circle ms-3" href="">
                         <small class="fa fa-search text-body"></small>
-                    </a>
+                    </p>
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
                         <small class="fa fa-user text-body"></small>
                     </a>
@@ -95,10 +133,18 @@
                 </div>
             </div>
         </nav>
+        <form id="main_search" class="row g-3 hide">
+            <div class="col"></div>
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">검색</button>
+            </div>
+        </form>
     </div>
     <!-- Navbar End -->
-
-
     <!-- Page Header Start -->
     <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
@@ -334,14 +380,31 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">F<span class="text-secondary">oo</span>dy</h1>
-                    <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
-                        stet lorem sit clita</p>
-                    <div class="d-flex pt-2">
+    <div id="footer" class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="footer_row" class=" row container py-5">
+            <div id="footer_des" class=" g-5">
+                <div id="foot_address" class=" col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4 col-3">Address</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>&nbsp&nbsp 123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>&nbsp +012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i>&nbsp info@example.com</p>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                        <h1 class="fw-bold text-primary mb-4">낭<span class="text-secondary">만</span>서점
+                        </h1>
+                    </div>
+                    <div class="col-md-4 text-center text-md-center mb-4 mb-md-0">
+                        <p>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et
+                            lorem
+                            et sit, sed
+                            stet lorem sit clita</p>
+                    </div>
+                    <div id="sns_footer" class="col-md-4 text-md-end mb-4 mb-md-0">
+
                         <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
                                 class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
@@ -352,30 +415,10 @@
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button"
-                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+
+
+
+
             </div>
         </div>
         <div class="container-fluid copyright">
@@ -385,7 +428,7 @@
                         &copy; <a href="#">Your Site Name</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+
                         Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                         <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
                     </div>
@@ -394,12 +437,78 @@
         </div>
     </div>
     <!-- Footer End -->
+    <div class="fix">
+
+        <!-- 실시간 -->
+        <div class="col-4" id="real_chatSum">
+            <div id="real_chat" class="col-12 hide">
+                <div class="row" id="real_nav">
+                    <div class="col-2" id="nav_ico"><i class="bi bi-person-fill"></i></div>
+                    <div class="col" id="nav_text">
+                        <div id="text_title">독립서점</div>
+                        <div id="text_subtitle">응답하는중</div>
+                    </div>
+                </div>
+                <div id="real_chatItems">
+                    <div class="row" id="chat_left">
+                        <div class="row">
+
+                            <div id="item_ico" class="col-2 justify-content-end"><i class="bi bi-person-circle"></i>
+                            </div>
+                            <div class="col-10"></div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-9" id="content_box">
+
+                                <div id="item_content">
+                                    dfsfdddddddddfsfdddddddddfsfdddddddddfsfdddddddddfsfdddddddd
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+
+                    </div>
+                    <div class="row" id="chat_right">
+                        <div class="row">
+                            <div class="col-10"></div>
+                            <div id="item_ico" class="col-2"><i class="bi bi-person-circle"></i></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-9" id="content_box">
+
+                                <div id="item_content">
+                                    dfsfdddddddddfsfdddddddddfsfdddddddddfsfdddddddddfsfdddddddd
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
+                </div>
+                <div class="row" id="real_input">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-secondary" type="button" id="button-addon2">Button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="button_box">
 
+                <button class="btn btn-info" id="chat_button"> 실시간 채팅</button>
+            </div>
+
+
+        </div>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+                class="bi bi-arrow-up"></i></a>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -411,6 +520,22 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#chat_button").click(function () {
+
+                $("#real_chat").toggleClass("hide");
+            });
+
+            $("#search_btn").click(function () {
+
+                $("#main_search").toggleClass("hide");
+            });
+            search_btn
+        });
+
+
+    </script>
 </body>
 
 </html>

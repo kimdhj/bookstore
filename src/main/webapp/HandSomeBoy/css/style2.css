@@ -6,14 +6,6 @@
   --dark: #111111;
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 30px;
-  bottom: 30px;
-  z-index: 99;
-}
-
 .my-6 {
   margin-top: 6rem;
   margin-bottom: 6rem;
