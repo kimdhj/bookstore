@@ -2,11 +2,27 @@
   padding-top: 0px;
   margin-top: 0px;
 }
-body{
-  background-image: url(../img/paper.JPG);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80%;
+#top_border{
+  padding-top: 20px ;
+  border-top: 2px solid #666666;
+}
+#top_border_nopd{
+  border-top: 2px solid #666666;
+}
+#top_border_bottom{
+  padding-top: 20px ;
+  padding-bottom: 20px;
+  border-top: 2px solid #666666;
+}
+#input_text_size{
+  width: 100%;
+}
+#usePoint{
+  width: 100%;
+}
+#big_big{
+  font-size: 2vw;
+  padding: 0px;
 }
 #naaav{
   background-color: antiquewhite;
