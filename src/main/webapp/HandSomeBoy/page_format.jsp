@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
  <jsp:include page="./cssStart.jsp"></jsp:include>
  <!-- css 추가  -->
+ 
 <jsp:include page="./header.jsp"></jsp:include>
 <!--여기작성  -->
 

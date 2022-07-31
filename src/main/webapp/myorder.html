@@ -30,11 +30,18 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css?ver=2" rel="stylesheet">
     
-    <!-- DatePicker -->
-    
-	
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    
+    <!-- DatePicker -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/theme.min.css" integrity="sha512-hbs/7O+vqWZS49DulqH1n2lVtu63t3c3MTAn0oYMINS5aT8eIAbJGDXgLt6IxDHcWyzVTgf9XyzZ9iWyVQ7mCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+	    $(function(){
+	        $("#datepicker").datepicker();
+	    });
+	</script>
+	
 </head>
 
 <body>
@@ -320,16 +327,10 @@
 
 								  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
 								  <label class="btn btn-light btn-outline-dark btn-sm" for="btnradio3">6개월</label>
-								  
-								  <!-- DatePicker -->
-  								  
-  								  
-
-								  <!-- DatePicker 끝 -->
 									
 								</div>
 						    </div>
-						    <div class="col-2">Column</div>
+						    <div class="col-2"></div>
 						    <div class="col-10"></div>
 						  </div>
 					    </div>
@@ -405,8 +406,11 @@
 					<!-- 페이징 끝 -->
 					<br><br>
                     <!-- 나의 최근 주문현황 끝 -->
+                
                 <!-- 우측하단 끝 -->
+                 
             </div>
+           
             <!-- 마이페이지 메인 바디 끝 -->
         </div>
     </div>
@@ -474,18 +478,24 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-	
+    
+    
 
 
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+  	<script>
+	    $(function(){
+	        $("#datepicker").datepicker();
+	    });
+	</script>
     
 </body>
 
