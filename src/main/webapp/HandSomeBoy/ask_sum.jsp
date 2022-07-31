@@ -5,7 +5,9 @@
 <link href="./ask_sum.css" rel="stylesheet">
 <jsp:include page="./mypage_header.jsp"></jsp:include>
 <!--여기 입력  -->
-                    <div class="row" id="main_wrapper">
+                 
+
+      <div class="row" id="main_wrapper">
                         <div class="row" id="under_menu">
                             <div class="row" id="writerBox">
                                 <div class="row" id="top_sum">
@@ -26,35 +28,33 @@
                                 <div class="row" id="table">
                                     <div id="table_title" class="row">
                                         <div class="col-3">일자</div>
-                                        <div class="col-2">제목</div>
-                                        <div class="col-3">내용</div>
+                                        <div class="col-5">제목</div>
                                         <div class="col-1">Y/N</div>
-                                        <div class="col-3">답변 완료일</div>
-                                    </div>
-
-                                    <div id="table_item" class="row">
-                                        <div class="col-3">2022-11-17</div>
-                                        <div class="col-2">호모나 이타다기</div>
-                                        <div class="col-3">오늘도 맛있는 이타다기</div>
-                                        <div class="col-1">Y
-                                        </div>
-                                        <div class="col-3">2022-11-17</div>
+                                        <div class="col-3">선택</div>
                                     </div>
                                     <div id="table_item" class="row">
                                         <div class="col-3">2022-11-17</div>
-                                        <div class="col-2">호모나 이타다기</div>
-                                        <div class="col-3">오늘도 맛있는 이타다기</div>
+                                        <div class="col-5">오늘도 맛있는 이타다기</div>
                                         <div class="col-1">Y
                                         </div>
-                                        <div class="col-3">2022-11-17</div>
+                                        <div class="col-3"><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></div>
                                     </div>
                                     <div id="table_item" class="row">
                                         <div class="col-3">2022-11-17</div>
-                                        <div class="col-2">호모나 이타다기</div>
-                                        <div class="col-3">오늘도 맛있는 이타다기</div>
+                                        <div class="col-5">오늘도 맛있는 이타다기</div>
                                         <div class="col-1">Y
                                         </div>
+                                        <div class="col-3"><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></div>
+                                    </div>
+                                    <div id="table_item" class="row">
                                         <div class="col-3">2022-11-17</div>
+                                        <div class="col-5">오늘도 맛있는 이타다기</div>
+                                        <div class="col-1">Y
+                                        </div>
+                                        <div class="col-3"><input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault"></div>
                                     </div>
                                     <div id="table_bottom" class="row">
                                         <nav aria-label="Page navigation example">
@@ -75,11 +75,14 @@
                                             </ul>
                                         </nav>
                                     </div>
+                                    <div class="row" id="btn_box justify-end">
+                                        <div class="col"></div>
+                                        <button class="col-auto rounded-pill bg-info">선택 삭제</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-              
+                    </div>              
 <jsp:include page="./mypage_scriptStart.jsp"></jsp:include>
 <!-- 여기 자바 스크립트  -->
 <jsp:include page="./mypage_footer.jsp"></jsp:include>
