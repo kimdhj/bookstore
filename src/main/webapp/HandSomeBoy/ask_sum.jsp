@@ -5,9 +5,7 @@
 <link href="./ask_sum.css" rel="stylesheet">
 <jsp:include page="./mypage_header.jsp"></jsp:include>
 <!--여기 입력  -->
-                 
-
-      <div class="row" id="main_wrapper">
+     <div class="row" id="main_wrapper">
                         <div class="row" id="under_menu">
                             <div class="row" id="writerBox">
                                 <div class="row" id="top_sum">
@@ -82,7 +80,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>              
+                    </div>            
+
+     
 <jsp:include page="./mypage_scriptStart.jsp"></jsp:include>
 <!-- 여기 자바 스크립트  -->
 <jsp:include page="./mypage_footer.jsp"></jsp:include>

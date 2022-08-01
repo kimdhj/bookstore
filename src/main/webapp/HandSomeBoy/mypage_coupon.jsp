@@ -5,7 +5,7 @@
     <link href="./mypage_coupon.css" rel="stylesheet">
 <jsp:include page="./mypage_header.jsp"></jsp:include>
 <!--여기 입력  -->
-                        <div class="row" id="main_wrapper">
+   <div class="row" id="main_wrapper">
                         <div class="row" id="under_menu">
                             <div class="row" id="discount">
                                 <div class="row" id="top_sum">
@@ -74,6 +74,64 @@
 
                                 </div>
                             </div>
+                            <div class="row ps-5 pe-5 hide" id="coupon_popUp">
+                                <div class="row bg-secondary p-2 border-dark border-top border-start border-end border-solid border-1 "
+                                    id="close_popUP">
+                                    <div class="col"></div>
+                                    <div class="col-auto">
+                                        <button id="popup_close" type="button" class="btn-close"
+                                            aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <div id="body_popUp"
+                                    class="row bg-body border-dark border-bottom border-start border-end border-solid border-1 ">
+                                    <div class="col-auto mt-2" id="under_topText">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-ticket-perforated-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4-1v1h1v-1H4Zm1 3v-1H4v1h1Zm7 0v-1h-1v1h1Zm-1-2h1v-1h-1v1Zm-6 3H4v1h1v-1Zm7 1v-1h-1v1h1Zm-7 1H4v1h1v-1Zm7 1v-1h-1v1h1Zm-8 1v1h1v-1H4Zm7 1h1v-1h-1v1Z" />
+                                        </svg>
+                                        할인쿠폰
+                                    </div>
+                                    <div class="row mt-4" id="input_line">
+                                        <div class="col-1"></div>
+                                        <div class="col row">
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control"
+                                                        aria-label="Sizing example input"
+                                                        aria-describedby="inputGroup-sizing-default">
+                                                    </di>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto mt-2 align-items-center">
+                                                <button id="coupon_insert"
+                                                    class="bg-primary rounded-pill border-0 text-center">쿠폰
+                                                    등록</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                    <div class="row mt-4" id="text_box">
+                                        <div class="align-items-center" id="popup_textTitle">
+                                            안내
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-exclamation-circle-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                            </svg>
+                                        </div>
+                                        <div class="row mt-2 mb-4" id="popup_alert">
+                                            등록하신 할인 쿠폰은 사용할 수 없습니다.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
                             <div class="row" id="pointMoney">
 
                                 <div class="row" id="top_sum">
@@ -177,10 +235,29 @@
 
                         </div>
 
+
+
+
                     </div>
-
-
     
 <jsp:include page="./mypage_scriptStart.jsp"></jsp:include>
 <!-- 여기 자바 스크립트  -->
+  <script>
+            $(function () {
+                $('#coupon_add').click(function () {
+
+                    $("#coupon_popUp").removeClass("hide");
+
+                });
+                $('#popup_close').click(function () {
+                    $("#coupon_popUp").addClass("hide");
+
+                });
+                $('#coupon_insert').click(function () {
+                    $("#coupon_popUp").addClass("hide");
+
+                });
+
+            })
+        </script>
 <jsp:include page="./mypage_footer.jsp"></jsp:include>
