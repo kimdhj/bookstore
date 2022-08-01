@@ -41,3 +41,26 @@
   background-color: transparent;
   margin: 0px;
 }
+#main_wrapper {
+  position: relative;
+}
+.bg-secondary {
+  background-color: rgb(127, 127, 127) !important;
+  border-radius: 20px 20px 0px 0px;
+}
+.bg-body {
+  background-color: rgb(224, 224, 224) !important;
+}
+#popup_textTitle {
+  display: flex;
+}
+#body_popUp {
+  border-radius: 0px 0px 20px 20px !important;
+}
+/* 팝업 */
+#coupon_popUp {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  z-index: 1;
+}

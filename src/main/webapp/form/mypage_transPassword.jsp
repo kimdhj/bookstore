@@ -5,7 +5,8 @@
   <link href="./mypage_transPassword.css" rel="stylesheet">
 <jsp:include page="./mypage_form/mypage_header.jsp"></jsp:include>
 <!--여기 입력  -->
-                    <div class="row" id="main_wrapper">
+                    
+       <div class="row" id="main_wrapper">
                         <div class="mt-5" id="top_title">
                             <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24"
                                 width="16" height="16">
@@ -24,7 +25,7 @@
                                     <div class="form-floating m-2 align-center">
                                         <input type="password" class="form-control" id="floatingInput"
                                             placeholder="name@example.com">
-                                        <label for="floatingInput">기존 비밀번호</label>
+                                        <label class="fs-5" for="floatingInput">기존 비밀번호</label>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +39,7 @@
                                     <div class="form-floating m-2 align-center">
                                         <input type="password" class="form-control" id="floatingInput"
                                             placeholder="name@example.com">
-                                        <label for="floatingInput">새 비밀번호</label>
+                                        <label class="fs-5" for="floatingInput">새 비밀번호</label>
                                     </div>
                                 </div>
                                 <div class="col-auto align-self-center" id="label">
@@ -55,7 +56,7 @@
                                     <div class="form-floating m-2 align-center">
                                         <input type="password" class="form-control" id="floatingInput"
                                             placeholder="name@example.com">
-                                        <label for="floatingInput">새 비밀번호</label>
+                                        <label class="fs-5" for="floatingInput">새 비밀번호</label>
                                     </div>
                                 </div>
                                 <div class="col-auto align-self-center" id="label">
@@ -66,11 +67,10 @@
                         <div class="row mt-2" id="btn_box">
                             <div class="col"></div>
                             <div class="col-auto">
-                                <button class="col-auto rounded-pill bg-info p-2">수&nbsp;정</button>
+                                <button id="modify" class="col-auto rounded-pill bg-info p-2">수&nbsp;정</button>
                             </div>
                         </div>
                     </div>
-
     
 <jsp:include page="./mypage_form/mypage_scriptStart.jsp"></jsp:include>
 <!-- 여기 자바 스크립트  -->
