@@ -170,10 +170,13 @@ $(function () {
 			</div>
 
 			<!-- QnA : 고정 -->
-			<div class="row">
-				<div id="cs_name2">QnA</div>
+			<div class="row mt-5">
+					<div class="col-8 m-0 mt-4" id="cs_name2">QnA</div>
+					<div class="col"></div>
+					<div class="col-auto m-0 align-items-center">
+						<button class="mt-5" id="cs_btn">문의하기</button>
+					</div>
 			</div>
-			<div class="row"></div>
 			<div class="table" id="table_table2">
 				<div class="row" id="table_height2">
 					<div class="col-3">번호</div>

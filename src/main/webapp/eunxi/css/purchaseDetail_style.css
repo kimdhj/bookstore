@@ -1,2 +1,21 @@
 @charset "UTF-8";
 
+#purchaseDetail_name{
+	margin-top: 4%
+}
+
+#purchaseDetail_box{
+	border: 1px solid black;
+}
+
+.purchaseDetail_productinfo>*{
+	margin-top: 5%
+}
+
+.purchaseDetail_order{
+	border: 1px solid black;
+}
+
+.purchase_recipientInfo{
+	border: 1px solid black;
+}

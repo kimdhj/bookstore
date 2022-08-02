@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #review_name{
-	margin-top: 15%;
+	margin-top: 4%;
 	margin-bottom: 2%;
 }
 #review_name2{
@@ -36,5 +36,5 @@
 	margin-bottom: 2%;
 }
 #review_btn>*{
-	margin-right: 5%;
+	margin-right: 10%;
 }

@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 #purchaseList_name{
-	margin-top: 15%;
+	margin-top: 4%;
 	margin-bottom: 2%;
 }
 .purchaseList_img{
 	margin: auto;
 }
 #purchaseList_title{
-	margin-top: 3%;
+	margin-top: 6%;
 }
 
 #datepicker{
@@ -28,7 +28,7 @@
 #purchaseList_hr2{
 	height: 2px;
 	background-color: blue;
-	margin-top: 1%;
+	margin-top: 2%;
 	margin-bottom: 5%;
 }
 #purchaseList_hr3{
@@ -40,7 +40,7 @@
 #purchaseList_hr4{
 	height: 2px;
 	background-color: purple;
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 	margin-top: 2%;
 }
 
