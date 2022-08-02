@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+#purchaseList_name{
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+.purchaseList_img{
+	margin: auto;
+}
+#purchaseList_title{
+	margin-top: 6%;
+}
+
+#datepicker{
+	margin-bottom: 2%;
+}
+
+#purchaseList_calendar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#purchaseList_hr1{
+	height: 2px;
+	background-color: red;
+}
+#purchaseList_hr2{
+	height: 2px;
+	background-color: blue;
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+#purchaseList_hr3{
+	height: 2px;
+	background-color: green;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+#purchaseList_hr4{
+	height: 2px;
+	background-color: purple;
+	margin-bottom: 3%;
+	margin-top: 2%;
+}
+
+#purchaseList_btns{
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+#purchaseList_btns>*>*{
+	margin: auto;
+	display: block;
+	margin-bottom: 20%;
+}
+
+

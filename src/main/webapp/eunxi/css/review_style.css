@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#review_name{
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+#review_name2{
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+#review_title{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.review_img{
+	margin: auto;
+}
+
+#review_hr1{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#review_hr2{
+	margin-top: 2%;
+	margin-bottom: 13%;
+}
+
+#review_textarea{
+	margin-bottom: 1.5%;
+}
+
+#review_btn{
+	margin-bottom: 2%;
+}
+#review_btn>*{
+	margin-right: 10%;
+}
