@@ -63,6 +63,7 @@
 							오프라인 매장
 						</div>
 					</div>
+					<hr id="info_hr4">
 				</div>
 			</div>
 		</div>
@@ -74,10 +75,36 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8" id="map">
+			<div id="map" style="width:100%;height:350px;"></div>
+			
 				여기 지도가 들어갈거예요 <img src="../layout/img/info2.png" width="100%" />
 			</div>
 		</div>
 	</div>
 	<div class="col-2"></div>
 </div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=851667534908448237cc0539bd8004d6"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(37.5130174,126.9399315), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+var iwContent = '<div style="padding:5px;">낭만 서점 오라구!</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+iwPosition = new kakao.maps.LatLng(37.5130174,126.9399315), //인포윈도우 표시 위치입니다
+iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+//인포윈도우를 생성하고 지도에 표시합니다
+var infowindow = new kakao.maps.InfoWindow({
+map: map, // 인포윈도우가 표시될 지도
+position : iwPosition, 
+content : iwContent,
+removable : iwRemoveable
+});
+</script>
+
 <jsp:include page="./footer.jsp"></jsp:include>

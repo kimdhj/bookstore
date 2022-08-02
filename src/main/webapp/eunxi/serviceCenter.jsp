@@ -170,7 +170,7 @@ $(function () {
 			</div>
 
 			<!-- QnA : 고정 -->
-			<div class="row mt-5">
+			<div class="row cs_qna">
 					<div class="col-8 m-0 mt-4" id="cs_name2">QnA</div>
 					<div class="col"></div>
 					<div class="col-auto m-0 align-items-center">

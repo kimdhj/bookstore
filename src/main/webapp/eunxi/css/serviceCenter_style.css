@@ -9,8 +9,7 @@
 
 #cs_name2 {
 	font-size: 2rem;
-	font-weight: bold; margin-top : 2%;
-	margin-top: 10%;
+	font-weight: bold; 
 }
 
 #cs_line {
@@ -29,6 +28,9 @@
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
+#cs_faq>*>*{
+	margin-top: 5%;
+}
 
 #cs_faq a {
 	text-align: center;
@@ -42,6 +44,10 @@
 #cs_hr{
 	border-bottom: 1px solid black;
 	margin-bottom: 2%;
+}
+
+.cs_qna{
+	margin-top: 13% !important;
 }
 
 #form-select1{
@@ -76,7 +82,7 @@
 	justify-content: center;
 }
 #table_payment>*>*{
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid black;
 	border-top: 0px;
 	border-right: 0px;
 	margin: 0px;
@@ -99,7 +105,7 @@
 	justify-content: center;
 }
 #table_delivery>*>*{
-	border-bottom: 1px solid blue;
+	border-bottom: 1px solid black;
 	border-top: 0px;
 	border-right: 0px;
 	margin: 0px;
@@ -122,7 +128,7 @@
 	justify-content: center;
 }
 #table_change>*>*{
-	border-bottom: 1px solid blue;
+	border-bottom: 1px solid black;
 	border-top: 0px;
 	border-right: 0px;
 	margin: 0px;
@@ -145,7 +151,7 @@
 	justify-content: center;
 }
 #table_user>*>*{
-	border-bottom: 1px solid blue;
+	border-bottom: 1px solid black;
 	border-top: 0px;
 	border-right: 0px;
 	margin: 0px;
@@ -168,7 +174,7 @@
 	justify-content: center;
 }
 #table_table2>*>*{
-	border-bottom: 1px solid blue;
+	border-bottom: 1px solid black;
 	border-top: 0px;
 	border-right: 0px;
 	margin: 0px;

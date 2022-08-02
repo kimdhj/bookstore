@@ -169,31 +169,61 @@
 					<div class="row">
 						<div class="col-11">
 							<h3 id="purchaseDetail_name">구매 상세</h3>
-							<hr>
-							<div class="col-11" id="purchaseDetail_box">주문일자</div>
-							<hr>
-							<div class="row">
+							<div class="col-12 purchaseDetail_hr mb-1"></div>
+							<div class="col-12" id="purchaseDetail_box">
+								<div class="row">
+									<div class="col-3">주문일자</div>
+									<div class="col-3 purchaseDetail_content1">2022.07.23</div>
+									<div class="col-3">주문번호</div>
+									<div class="col-3 purchaseDetail_content1">
+										2022072312345678</div>
+								</div>
+							</div>
+							<div class="col-12 purchaseDetail_hr mt-1"></div>
+							<div class="row purcahseDetail_content2">
 								<div class="col-3">상품주문번호</div>
-								<div class="col-5">상품정보</div>
+								<div class="col-5 text-start">상품정보</div>
 								<div class="col-2">상품금액(수량)</div>
 								<div class="col-2">진행상태</div>
 							</div>
-							<hr>
-							<div class="row">
-								<div class="col-3">상품주문번호</div>
+							<div class="col-12 purchaseDetail_hr mt-1"></div>
+							<div class="row purcahseDetail_content3">
+								<div class="col-3">2022072312345678</div>
 								<div class="col-2">
 									<img width="100%" src="./img/product1-8.jpg">
 								</div>
 								<div class="col-3 purchaseDetail_productinfo">
-									<div class="row">책 제목</div>
-									<div class="row">저자</div>
-									<div class="row">출판사</div>
-									<div class="row">출판일자</div>
+									<div class="row">
+										<div class="col text-start p-0">제목</div>
+										<div class="col">해리포터</div>
+									</div>
+									<div class="row">
+										<div class="col text-start p-0">저자</div>
+										<div class="col">은지</div>
+									</div>
+									<div class="row">
+										<div class="col text-start p-0">출판사</div>
+										<div class="col">KG</div>
+									</div>
+									<div class="row">
+										<div class="col text-start p-0">출판일자</div>
+										<div class="col">2015.07.28</div>
+									</div>
 								</div>
-								<div class="col-2">상품금액(수량)</div>
-								<div class="col-2">진행상태</div>
+								<div class="col-2">1</div>
+								<div class="col-2">
+									<div class="row">
+										<div class="col">
+											<button>배송현황</button>
+										</div>
+									</div>
+									<!-- 발송완료가 될 경우에만 발송완료라고 출력되게 만들기 -->
+									<div class="row text-center">
+										<div class="col mt-1">발송완료</div>
+									</div>
+								</div>
 							</div>
-							<hr>
+							<div class="col-12 purchaseDetail_hr mt-1"></div>
 						</div>
 					</div>
 				</div>
@@ -203,113 +233,130 @@
 					<div class="row">
 						<div class="col-11">
 							<h6>주문/결제 금액 정보</h6>
-							<hr>
+							<div class="col-12 purchaseDetail_hr mt-1"></div>
+						</div>
+						<div class="col-11">
 							<div class="row">
-								<div class="col-4">
-									<h5>최소 주문금액</h5>
-									<div class="row">
+								<div class="col-4 purchaseDetail_box2">
+									<h6 class="purchaseDetail_name2">최소 주문금액</h6>
+									<div class="row purchaseDetail_font">
 										<div class="col-5">상품금액</div>
-										180,000원
+										<div class="col text-end">180,000원</div>
 									</div>
-									<div class="row">
+									<div class="row purchaseDetail_font">
 										<div class="col-5">배송비</div>
-										<div class="purchaseDetail_font">0원</div>
+										<div class="col text-end">0원</div>
 									</div>
-									<div class="row">
-										<div class="col-5">할인(포인트 및 쿠폰 사용)</div>
-										<div class="purchaseDetail_font">0원</div>
+									<div class="row purchaseDetail_font">
+										<div class="col-5">할인</div>
+										<div class="col text-end">0원</div>
 									</div>
 								</div>
 								<div class="col-4">
-									<h5>결제 상세</h5>
-									<div class="row">
-										<div class="col-5">결제 방법(카드 / 무통장 입금 등)</div>
-										<div class="purchaseDetail_font">180,000원</div>
+									<h6 class="purchaseDetail_name2">결제 상세</h6>
+									<div class="row purchaseDetail_font">
+										<div class="col-5">결제 방법</div>
+										<div class="col text-end">180,000원</div>
 									</div>
-									<div class="row">
-										<div class="col-5">할인한 경우, 할인 가격 작성</div>
-										<div class="purchaseDetail_font">0원</div>
-									</div>
-								</div>
-								<div class="col-4 purchaseDetail_order">
-									<div class="row">
-										<h5>주문금액 50,000원</h5>
-									</div>
-									<div class="row">
-										<div class="col-5">결제 방법 작성 (카드 / 무통장 입금 등)</div>
-									</div>
-									<div class="purchaseDetail_font">180,000원</div>
-								</div>
-							</div>
-							<!-- 포인트 혜택 -->
-							<div class="row">
-								<hr>
-								<h6>포인트 혜택 최대|500원 적립</h6>
-								<hr>
-								<div class="row">
-									<div class="col-6">
-										<div class="col-6">구매적립 총 200원</div>
-										<div class="col-6">ㄴ 기본적립 200원</div>
-									</div>
-									<div class="col-6">
-										<div class="col-6">리뷰적립 최대 300원</div>
-										<div class="col-6">동일 상품의 상품리뷰 적립은 각각 1회로 제한됩니다.</div>
+									<div class="row purchaseDetail_font">
+										<div class="col-5">할인 가격</div>
+										<div class="col text-end">0원</div>
 									</div>
 								</div>
-								<hr>
-								<div class="row">
-									<div class="col-6">
-										카드 간편 결제
-										<div class="row">
-										<!-- 카드 설명 -->
-											법인(개인사업자 법인 포함)카드는 할부/무이자 혜택 적용 불가<br>
-											카드에 BC마크가 없는 경우 무이자 할부 적용 불가<br>
-											무이자 적용 여부는 카드사로 문의하시면 정확하게 확인할 수 있습니다.
+								<div class="col purchaseDetail_order">
+									<!-- 주문 금액 확인 창 -->
+									<div class="row purchaseDetail_name3">
+										<div class="col">
+											<h6>주문금액</h6>
+										</div>
+										<div class="col text-end">
+											<h6>180,000원</h6>
 										</div>
 									</div>
-									<div class="col-6">
-										카드 정보 - 일시불
-										(결제 날짜 결제 시간)
+									<div class="row purchaseDetail_font">
+										<div class="col-5">카드</div>
+										<div class="col text-end">100,000원</div>
+									</div>
+									<div class="row purchaseDetail_font">
+										<div class="col-5">무통장 입금</div>
+										<div class="col text-end">80,000원</div>
 									</div>
 								</div>
 							</div>
+							<div class="col-12 purchaseDetail_hr"></div>
 						</div>
-					</div>
-				</div>
-
-				<!-- 수신자 정보 -->
-				<div>
-					<div class="row">
+						<!-- 포인트 혜택 -->
 						<div class="col-11">
-							<hr>
-							<h5>수신자 정보</h5>
-							<hr>
-							<div class="col-11">
-								<div class="row">
-									<div class="col-2 purchase_recipientInfo">받는 사람</div>
-									고은지
-									<div class="col-7"></div>
-									<div class="col-2">주문자 정보</div>
+							<h6 class="purchaseDetail_name3">포인트 혜택</h6>
+							<div class="col-12 purchaseDetail_hr"></div>
+						</div>
+						<div class="row">
+							<div class="col-11 purchaseDetail_font">
+								<div class="row purchaseDetail_font2">
+									<div class="col text-start">구매적립</div>
+									<div class="col text-end">총 200원</div>
+								</div>
+								<div class="row purchaseDetail_font1">
+									<div class="col text-start">기본적립</div>
+									<div class="col text-end">200원</div>
 								</div>
 								<div class="row">
-									<div class="col-2 purchase_recipientInfo">휴대폰</div>
-									010-1111-1111
-									<div class="col-6"></div>
-									<div class="col-2">춘식이</div>
-								</div>
-								<div class="row">
-									<div class="col-2 purchase_recipientInfo">기타메모</div>
-									집 앞 배송 부탁드립니다.
-									<div class="col-4"></div>
-									<div class="col-3">010-4837-3856</div>
+									<div style="color: grey">
+									* 동일 상품의 상품리뷰 적립은 최대 500원으로, 각각 1회로 제한됩니다.
+									</div>
 								</div>
 							</div>
+					</div>
+					<div class="col-11">
+						<div class="col-12 purchaseDetail_hr mt-1"></div></div>
+					<div class="row">
+						<div class="col-6">
+							카드 간편 결제
+							<div class="row">
+								<!-- 카드 설명 -->
+								법인(개인사업자 법인 포함)카드는 할부/무이자 혜택 적용 불가<br> 카드에 BC마크가 없는 경우 무이자
+								할부 적용 불가<br> 무이자 적용 여부는 카드사로 문의하시면 정확하게 확인할 수 있습니다.
+							</div>
+						</div>
+						<div class="col-6">카드 정보 - 일시불 (결제 날짜 결제 시간)</div>
+					</div>
+				</div>
+			</div>
+		<!-- 수신자 정보 -->
+		<div>
+			<div class="row">
+				<div class="col-11">
+					<hr>
+					<h5>수신자 정보</h5>
+					<hr>
+					<div class="col-11">
+						<div class="row">
+							<div class="col-2 purchaseDetail_recipientInfo">받는 사람</div>
+							고은지
+							<div class="col-7"></div>
+							<div class="col-2">주문자 정보</div>
+						</div>
+						<div class="row">
+							<div class="col-2 purchase_recipientInfo">휴대폰</div>
+							010-1111-1111
+							<div class="col-6"></div>
+							<div class="col-2">춘식이</div>
+						</div>
+						<div class="row">
+							<div class="col-2 purchase_recipientInfo">기타메모</div>
+							집 앞 배송 부탁드립니다.
+							<div class="col-4"></div>
+							<div class="col-3">010-4837-3856</div>
 						</div>
 					</div>
 				</div>
-				<!-- 우측하단 끝 -->
 			</div>
-			<!-- 마이페이지 메인 바디 끝 -->
 		</div>
+		</div>
+
+		<!-- 우측하단 끝 -->
 	</div>
-	<jsp:include page="./footer.jsp"></jsp:include>
+	<!-- 마이페이지 메인 바디 끝 -->
+</div>
+</div>
+<jsp:include page="./footer.jsp"></jsp:include>
