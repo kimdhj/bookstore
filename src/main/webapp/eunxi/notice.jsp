@@ -6,7 +6,6 @@
 <jsp:include page="./header.jsp"></jsp:include>
 <div class="row">
 	<div class="col-2"></div>
-
 	<div class="col-8">
 		<!-- 공지사항 -->
 			<div id="notice_name">공지사항</div>
