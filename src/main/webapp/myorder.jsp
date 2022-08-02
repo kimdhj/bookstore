@@ -92,7 +92,17 @@
 					  </div>
 					</div>
                     <!-- 배송정보 끝 -->
-
+                    
+                    <!-- 배송조회 -->
+                    <select id="select_logistics" name = "Appia">
+			          <option id = "delivery_post" class="logistics" value = "post" selected>우체국택배</option>
+			          <option id = "delivery_cj" class="logistics" value = "cj">CJ대한통운</option>
+			          <option id = "delivery_logen" class="logistics" value = "logen">로젠택배</option>
+					</select>
+                    <input id='deliveryNumber' placeholder="운송장번호입력" onkeyup=''/>
+                    <button type="button" onclick="deliveryTracking()">조회</button>
+					<!-- 배송조회 끝 -->
+                    
                     <!-- 기간조회 및 조건검색 -->
                     
                     
@@ -274,6 +284,36 @@
        
      
      
+    </script>
+    
+    <script>
+    	//운송장번호로 배송 조회
+	    //let target = document.getElementById("select_logistics");
+		//alert('선택된 옵션 text 값=' + target.options[target.selectedIndex].text);     // 옵션 text 값
+	    //alert('선택된 옵션 value 값=' + target.options[target.selectedIndex].value);     // 옵션 value 값
+    	//송장번호 입력
+    	function deliveryTracking()  {
+	    	const deliveryNumber = document.getElementById("deliveryNumber").value; //입력받은 운송장번호
+    		let target = document.getElementById("select_logistics");//선택한 택배회사
+    		let logistics = target.options[target.selectedIndex].text;//택배회사이름
+    		let link = "https://tracker.delivery/#/";
+    		
+    		if(logistics === "우체국택배") {
+    			alert("우체국택배");
+    			link += "kr.epost/"
+    			console.log(link);
+    			console.log(deliveryNumber);
+    		} else if(logistics === "CJ대한통운") {
+    			alert("CJ대한통운");
+    			link += "kr.cjlogistics/"
+    		} else if(logistics === "로젠택배") {
+    			alert("로젠택배");
+    			link += "kr.logen/"
+    		}
+    		link += deliveryNumber;
+    		location.href = link;
+    	}
+    	
     </script>
 </body>
 
