@@ -1,0 +1,18 @@
+#inner_box {
+  margin-top: 15%;
+}
+#inner_box * {
+  font-size: 1vw;
+}
+.bg-gray {
+  background-color: rgb(233, 236, 239) !important;
+}
+.border-gray {
+  border-color: rgb(212, 212, 212) !important;
+}
+#Content {
+  height: 200vh;
+  background-image: url("../img/subscribe_BG.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
