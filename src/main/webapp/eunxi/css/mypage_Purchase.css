@@ -20,34 +20,33 @@
 	align-items: center;
 	justify-content: center;
 }
-
+.purchaseList_hr{
+	border: 1px solid black;
+	border-bottom: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 #purchaseList_hr1{
-	height: 2px;
-	background-color: red;
+	background-color: black;
 }
 #purchaseList_hr2{
-	height: 2px;
-	background-color: blue;
 	margin-top: 2%;
 	margin-bottom: 5%;
+	background-color: black;
 }
 #purchaseList_hr3{
-	height: 2px;
-	background-color: green;
 	margin-bottom: 2%;
 	margin-top: 2%;
+	background-color: black;
 }
 #purchaseList_hr4{
-	height: 2px;
-	background-color: purple;
 	margin-bottom: 3%;
 	margin-top: 2%;
+	background-color: black;
 }
 
-#purchaseList_btns{
-	padding-top: 5%;
-	padding-bottom: 3%;
-}
 #purchaseList_btns>*>*{
 	margin: auto;
 	display: block;

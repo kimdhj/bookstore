@@ -177,11 +177,10 @@
 				<!-- 여기 삽입 -->
 				<!-- 리뷰 작성 페이지 -->
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-10">
+					<div class="col-11">
 						<div class="row">
 							<h3 id="review_name">my Review</h3>
-							<hr class="review_hr1">
+							<div class="col-12 review_hr"></div>
 						</div>
 						<div class="row">
 							<div class="col-2 review_img">
@@ -229,18 +228,17 @@
 							</div>
 						</div>
 						<div class="row">
-							<hr id="review_hr2">
+							<div class="col-12 review_hr"></div>
 						</div>
 					</div>
 				</div>
 
 				<!-- 리뷰 작성 칸 -->
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-10">
+					<div class="col-11">
 						<div class="row">
 							<h3 id="review_name2">리뷰 작성</h3>
-							<hr class="review_hr1">
+							<div class="col-12 review_hr"></div>
 						</div>
 						<div class="row" id="review_textarea">
 							<textarea rows="10"></textarea>
