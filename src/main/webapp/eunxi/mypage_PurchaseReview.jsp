@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <jsp:include page="./header.jsp"></jsp:include>
 <head>
-<link href="./css/review_style.css" rel="stylesheet">
+<link href="./css/mypage_PurchaseReview.css" rel="stylesheet">
 <link href="./css/star_style.css" rel="stylesheet">
 </head>
 <!-- Page Header Start -->
