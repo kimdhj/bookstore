@@ -4,8 +4,8 @@
  <!-- css 추가  -->
      <link href="./detail.css" rel="stylesheet">
 <jsp:include page="./page_jspFormat/header.jsp"></jsp:include>
-<!--여기작성  -->
-    <div id="detail_wrapper" class="row">
+<!--여기작성  -->0
+      <div id="detail_wrapper" class="row">
         <div class="col-2"></div>
         <div class="col-8">
             <!-- 상단 -->
@@ -37,14 +37,24 @@
                         제목
                     </div>
                     <div class="row" id="main_price">
-                        <div id="price">1,9000</div>
+                        <div id="price ">1,9000</div>
                         <div id="unit">원</div>
                     </div>
                     <div class="row" id="main_info">
                         이시카와 가즈오 저 / 김하경 역 | 홍익출판사 | 2015년 11월 25일
                     </div>
                     <div class="row" id="cash_btn">
-                        <button type="button" class="btn btn-info">결&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp제</button>
+                        <div class="col-3 " id="cash_button"><button type="button"
+                                class="btn btn-info font-weight-bold rounded-pill">결&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp제</button>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col-7" id="add_cart">
+                            <button type="button" class="btn btn-info border-0 rounded-pill">장바구니 추가</button>
+                        </div>
+                        <div class="col-7 hide" id="add_cartCheck">
+                            <button type="button" class="btn btn-info border-0 bg-gray rounded-pill">장바구니 삭제</button>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -467,13 +477,7 @@
             </div>
         </div>
     </div>
-
-    <!-- Carousel Start -->
-
-    <!-- Product End -->
-
-    <!-- 검색 창 -->
-
+  
 
 <jsp:include page="./page_jspFormat/scriptStart.jsp"></jsp:include>
 <!--script 추가  -->
@@ -489,6 +493,17 @@
                 $("#reviews").addClass("hide");
                 $("#item_detail").removeClass("hide");
 
+            });
+            $('#add_cartCheck').click(function () {
+                $('#add_cartCheck').addClass('hide');
+                $('#add_cart').removeClass('hide');
+                console.log("check");
+            });
+            $('#add_cart').click(function () {
+                $('#add_cart').addClass('hide');
+                $('#add_cartCheck').removeClass('hide');
+
+                console.log("check");
             });
         });
 

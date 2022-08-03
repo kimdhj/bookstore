@@ -43,7 +43,16 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   </head>
 
+<<<<<<< HEAD
+
+
+
+
+
+<body>
+=======
   <body>
+>>>>>>> main
     <div id="bull" class="row">
       <div class="col"></div>
 
@@ -75,7 +84,53 @@
       </div>
       <div class="col"></div>
     </div>
+    
     <script>
+<<<<<<< HEAD
+
+        // Create new wheel object specifying the parameters at creation time.
+        let theWheel = new Winwheel({
+            'numSegments': 24,   // Specify number of segments.
+            'outerRadius': 212,  // Set radius to so wheel fits the background.
+            'innerRadius': 120,  // Set inner radius to make wheel hollow.
+            'textFontSize': 16,   // Set font size accordingly.
+            'textMargin': 0,    // Take out default margin.
+            'segments':       // Define segments including colour and text.
+                [
+                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 1' },
+                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 2' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 3' },
+                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 4' },
+                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 5' },
+                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 6' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 7' },
+                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 8' },
+                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 9' },
+                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 10' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 11' },
+                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 12' },
+                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 13' },
+                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 14' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 15' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 16' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 17' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 18' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 19' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 20' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 21' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 22' },
+                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 23' },
+                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 24' }
+                ],
+            'animation':           // Define spin to stop animation.
+            {
+                'type': 'spinToStop',
+                'duration': 5,
+                'spins': 8,
+                'callbackFinished': alertPrize
+            }
+        });
+=======
       // Create new wheel object specifying the parameters at creation time.
       let theWheel = new Winwheel({
         numSegments: 24, // Specify number of segments.
@@ -118,6 +173,7 @@
           callbackFinished: alertPrize,
         },
       });
+>>>>>>> main
 
       // Vars used by the code in this page to do power controls.
       let wheelPower = 3;
@@ -163,5 +219,10 @@
         theWheel.draw(); // Call draw to render changes to the wheel.
       }
     </script>
+<<<<<<< HEAD
+</body>
+</html>
+=======
   </body>
 </html>
+>>>>>>> main
