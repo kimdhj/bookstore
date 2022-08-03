@@ -1,158 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Foody - Organic Food Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style2.css" rel="stylesheet">
-    <link href="./mypage_transPassword.css" rel="stylesheet">
+    <link href="css/style_roulette.css" rel="stylesheet" />
+    <link href="css/style2_roulette.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="main.css" type="text/css" />
     <script type="text/javascript" src="./Winwheel.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="bull" class="row">
-        <div class="col"></div>
+      <div class="col"></div>
 
-        <div class="col">
-            <div class="row the_wheel justify-content-center fs-1" align="center" valign="center">
-                <i class="bi bi-arrow-down"></i>
-            </div>
-            <div class="row the_wheel justify-content-center" align="center" valign="center">
-                <canvas width="500" height="500" class="col-auto" id="canvas">
-                </canvas>
-            </div>
-            <div class="row power_controls mt-5 justify-content-center ms-5 ps-5">
-                <img class="col-auto" id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
-            </div>
+      <div class="col">
+        <div
+          class="row the_wheel justify-content-center fs-1"
+          align="center"
+          valign="center"
+        >
+          <i class="bi bi-arrow-down"></i>
         </div>
-        <div class="col"></div>
+        <div
+          class="row the_wheel justify-content-center"
+          align="center"
+          valign="center"
+        >
+          <canvas width="500" height="500" class="col-auto" id="canvas">
+          </canvas>
+        </div>
+        <div class="row power_controls mt-5 justify-content-center ms-5 ps-5">
+          <img
+            class="col-auto"
+            id="spin_button"
+            src="spin_off.png"
+            alt="Spin"
+            onClick="startSpin();"
+          />
+        </div>
+      </div>
+      <div class="col"></div>
     </div>
     <script>
-        // Create new wheel object specifying the parameters at creation time.
-        let theWheel = new Winwheel({
-            'numSegments': 24,   // Specify number of segments.
-            'outerRadius': 212,  // Set radius to so wheel fits the background.
-            'innerRadius': 120,  // Set inner radius to make wheel hollow.
-            'textFontSize': 16,   // Set font size accordingly.
-            'textMargin': 0,    // Take out default margin.
-            'segments':       // Define segments including colour and text.
-                [
-                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 1' },
-                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 2' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 3' },
-                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 4' },
-                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 5' },
-                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 6' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 7' },
-                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 8' },
-                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 9' },
-                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 10' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 11' },
-                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 12' },
-                    { 'fillStyle': '#eae56f', 'text': '놀고 먹자 13' },
-                    { 'fillStyle': '#89f26e', 'text': '놀고 먹자 14' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 15' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 16' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 17' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 18' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 19' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 20' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 21' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 22' },
-                    { 'fillStyle': '#7de6ef', 'text': '놀고 먹자 23' },
-                    { 'fillStyle': '#e7706f', 'text': '놀고 먹자 24' }
-                ],
-            'animation':           // Define spin to stop animation.
-            {
-                'type': 'spinToStop',
-                'duration': 5,
-                'spins': 8,
-                'callbackFinished': alertPrize
-            }
-        });
+      // Create new wheel object specifying the parameters at creation time.
+      let theWheel = new Winwheel({
+        numSegments: 24, // Specify number of segments.
+        outerRadius: 212, // Set radius to so wheel fits the background.
+        innerRadius: 120, // Set inner radius to make wheel hollow.
+        textFontSize: 16, // Set font size accordingly.
+        textMargin: 0, // Take out default margin.
+        // Define segments including colour and text.
+        segments: [
+          { fillStyle: "#e7706f", text: "500P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#eae56f", text: "100P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#eae56f", text: "100P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+          { fillStyle: "#89f26e", text: "20P" },
+          { fillStyle: "#7de6ef", text: "10P" },
+        ],
+        // Define spin to stop animation.
+        animation: {
+          type: "spinToStop",
+          duration: 5,
+          spins: 8,
+          callbackFinished: alertPrize,
+        },
+      });
 
-        // Vars used by the code in this page to do power controls.
-        let wheelPower = 3;
+      // Vars used by the code in this page to do power controls.
+      let wheelPower = 3;
 
+      // -------------------------------------------------------
+      // Click handler for spin button.
+      // -------------------------------------------------------
+      function startSpin() {
+        // Ensure that spinning can't be clicked again while already running.
 
-
-
-        // -------------------------------------------------------
-        // Click handler for spin button.
-        // -------------------------------------------------------
-        function startSpin() {
-            // Ensure that spinning can't be clicked again while already running.
-
-            // Based on the power level selected adjust the number of spins for the wheel, the more times is has
-            // to rotate with the duration of the animation the quicker the wheel spins.
-            if (wheelPower == 1) {
-                theWheel.animation.spins = 3;
-            } else if (wheelPower == 2) {
-                theWheel.animation.spins = 8;
-            } else if (wheelPower == 3) {
-                theWheel.animation.spins = 15;
-            }
-
-            // Disable the spin button so can't click again while wheel is spinning.
-
-
-
-            // Begin the spin animation by calling startAnimation on the wheel object.
-            theWheel.startAnimation();
-
-            // Set to true so that power can't be changed and spin button re-enabled during
-            // the current animation. The user will have to reset before spinning again.
-
-
+        // Based on the power level selected adjust the number of spins for the wheel, the more times is has
+        // to rotate with the duration of the animation the quicker the wheel spins.
+        if (wheelPower == 1) {
+          theWheel.animation.spins = 3;
+        } else if (wheelPower == 2) {
+          theWheel.animation.spins = 8;
+        } else if (wheelPower == 3) {
+          theWheel.animation.spins = 15;
         }
 
-        // -------------------------------------------------------
-        // Function for reset button.
-        // -------------------------------------------------------
+        // Disable the spin button so can't click again while wheel is spinning.
 
+        // Begin the spin animation by calling startAnimation on the wheel object.
+        theWheel.startAnimation();
 
-        // -------------------------------------------------------
-        // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
-        // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
-        // -------------------------------------------------------
-        function alertPrize(indicatedSegment) {
-            // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-            alert("You have won " + indicatedSegment.text);
-            theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
-            theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
-            theWheel.draw();                // Call draw to render changes to the wheel.
+        // Set to true so that power can't be changed and spin button re-enabled during
+        // the current animation. The user will have to reset before spinning again.
+      }
 
-        }
+      // -------------------------------------------------------
+      // Function for reset button.
+      // -------------------------------------------------------
+
+      // -------------------------------------------------------
+      // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
+      // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
+      // -------------------------------------------------------
+      function alertPrize(indicatedSegment) {
+        // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
+        alert("You have won " + indicatedSegment.text);
+        theWheel.stopAnimation(false); // Stop the animation, false as param so does not call callback function.
+        theWheel.rotationAngle = 0; // Re-set the wheel angle to 0 degrees.
+        theWheel.draw(); // Call draw to render changes to the wheel.
+      }
     </script>
-</body>
-
+  </body>
 </html>
