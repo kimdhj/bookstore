@@ -75,9 +75,7 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8" id="map">
-			<div id="map" style="width:100%;height:350px;"></div>
-			
-				여기 지도가 들어갈거예요 <img src="../layout/img/info2.png" width="100%" />
+				<div id="map" style="width:100%;height:350px;"></div>
 			</div>
 		</div>
 	</div>

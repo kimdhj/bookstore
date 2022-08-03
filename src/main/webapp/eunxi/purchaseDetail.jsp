@@ -301,62 +301,69 @@
 									<div class="col text-end">200원</div>
 								</div>
 								<div class="row">
-									<div style="color: grey">
-									* 동일 상품의 상품리뷰 적립은 최대 500원으로, 각각 1회로 제한됩니다.
+									<div style="color: grey">* 동일 상품의 상품리뷰 적립은 최대 500원으로, 각각
+										1회로 제한됩니다.</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-11">
+							<div class="col-12 purchaseDetail_hr mt-1"></div>
+							<div class="row">
+								<div class="col-2 purchaseDetail_font4">카드 간편 결제</div>
+								<div class="col purchaseDetail_font5">우리BC카드 - 일시불
+									(2022.07.03.18:06)</div>
+								<div class="row">
+									<div class="col text-start purchaseDetail_font3 mt-1"
+										style="color: grey">
+										<!-- 카드 설명 -->
+										법인(개인사업자 법인 포함)카드는 할부/무이자 혜택 적용 불가<br> 카드에 BC마크가 없는 경우
+										무이자 할부 적용 불가<br> 무이자 적용 여부는 카드사로 문의하시면 정확하게 확인할 수 있습니다.
 									</div>
 								</div>
 							</div>
+						</div>
 					</div>
-					<div class="col-11">
-						<div class="col-12 purchaseDetail_hr mt-1"></div></div>
+				</div>
+				<!-- 수신자 정보 -->
+				<div>
 					<div class="row">
-						<div class="col-6">
-							카드 간편 결제
-							<div class="row">
-								<!-- 카드 설명 -->
-								법인(개인사업자 법인 포함)카드는 할부/무이자 혜택 적용 불가<br> 카드에 BC마크가 없는 경우 무이자
-								할부 적용 불가<br> 무이자 적용 여부는 카드사로 문의하시면 정확하게 확인할 수 있습니다.
+						<div class="col-11">
+							<div class="col-12 purchaseDetail_hr mt-1 mb-1"></div>
+							<h6 id="purchaseDetail_name4">수신자 정보</h6>
+							<div class="col-12 purchaseDetail_hr mt-1"></div>
+						</div>
+						<div class="col-11">
+							<div class="d-flex">
+								<div class="col-2 purchaseDetail_recipientInfo">받는 사람</div>
+								<div class="col purchaseDetail_font6 border-bottom-0">고은지</div>
+								<div class="col-7"></div>
+								<div class="col-2 purchaseDetail_orderer">
+								<div>
+								주문자 정보</div>
+								</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-2 purchaseDetail_recipientInfo">휴대폰</div>
+								<div class="col purchaseDetail_font6 border-bottom-0">010-1111-1111</div>
+								<div class="col"></div>
+								<div class="col-2 purchaseDetail_orderer2 border-black border-bottom-0">춘식이</div>
+							</div>
+							<div class="d-flex">
+								<div class="col-2 purchaseDetail_recipientInfo" id="purchaseDetail_box4">기타메모</div>
+								<div class="col purchaseDetail_font6">
+								집 앞 배송 부탁드립니다.
+								</div>
+								<div class="col-4 purchaseDetail_box3"></div>
+								<div class="col-2 purchaseDetail_orderer2 border-top-0">010-4837-3856</div>
 							</div>
 						</div>
-						<div class="col-6">카드 정보 - 일시불 (결제 날짜 결제 시간)</div>
 					</div>
 				</div>
 			</div>
-		<!-- 수신자 정보 -->
-		<div>
-			<div class="row">
-				<div class="col-11">
-					<hr>
-					<h5>수신자 정보</h5>
-					<hr>
-					<div class="col-11">
-						<div class="row">
-							<div class="col-2 purchaseDetail_recipientInfo">받는 사람</div>
-							고은지
-							<div class="col-7"></div>
-							<div class="col-2">주문자 정보</div>
-						</div>
-						<div class="row">
-							<div class="col-2 purchase_recipientInfo">휴대폰</div>
-							010-1111-1111
-							<div class="col-6"></div>
-							<div class="col-2">춘식이</div>
-						</div>
-						<div class="row">
-							<div class="col-2 purchase_recipientInfo">기타메모</div>
-							집 앞 배송 부탁드립니다.
-							<div class="col-4"></div>
-							<div class="col-3">010-4837-3856</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
 
-		<!-- 우측하단 끝 -->
+			<!-- 우측하단 끝 -->
+		</div>
+		<!-- 마이페이지 메인 바디 끝 -->
 	</div>
-	<!-- 마이페이지 메인 바디 끝 -->
-</div>
 </div>
 <jsp:include page="./footer.jsp"></jsp:include>

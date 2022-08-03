@@ -7,6 +7,7 @@
 <link href="./css/purchaseList_style.css" rel="stylesheet">
 <script src="./datepicker/js/datepicker.js"></script>
 <script src="./datepicker/js/datepicker.ko.js"></script> <!-- 달력 한글 추가를 위해 커스텀 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script><!-- alert 창 예쁘게 -->
 </head>
 <!-- Page Header Start -->
 <div class="container-fluid page-header wow fadeIn"
@@ -177,7 +178,7 @@
 					<div class="col-11">
 						<div class="row">
 							<h3 id="purchaseList_name">구매 목록</h3>
-							<hr id="purchaseList_hr1">
+							<div class="col-12 purchaseList_hr"></div>
 						</div>
 					</div>
 				</div>
@@ -194,7 +195,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<hr id="purchaseList_hr2">
+							<div class="col-12 purchaseList_hr"></div>
 						</div>
 					</div>
 				</div>
@@ -203,7 +204,7 @@
 				<div class="row">
 					<div class="col-11">
 						<div class="row">
-							<hr id="purchaseList_hr3">
+							<div class="col-12 purchaseList_hr"></div>
 						</div>
 						<div class="row">
 							<div class="col-2 purchaseList_img">
@@ -215,8 +216,8 @@
 									<div class="col-8">바보 | 2022.07.23</div>
 								</div>
 								<div class="row">
-									<div class="col-8">발송완료</div>
-									<div class="col-4">수량: 1개</div>
+									<div class="col-7">발송완료</div>
+									<div class="col-2">수량: 1개</div>
 								</div>
 								<div class="row">
 									<div class="col-12">
@@ -228,21 +229,23 @@
 								</div>
 							</div>
 							<div class="col-2" id="purchaseList_btns">
-								<a href="./purchaseDetail.jsp"><button>배송조회</button></a> <a
-									href="./review.jsp"><button>리뷰작성</button></a> <a
-									href="./purchaseDetail.jsp"><button>구매상세</button></a>
+								<a href="./purchaseDetail.jsp"><button>배송조회</button></a>
+								<a href="./review.jsp"><button>리뷰작성</button></a>
+								<a href="./purchaseDetail.jsp"><button>구매상세</button></a>
+								<a href="#"><button class="purchaseCancel">구매취소</button></a>
 							</div>
 						</div>
 						<div class="row">
-							<hr id="purchaseList_hr4">
+							<div class="col-12 purchaseList_hr"></div>
 						</div>
 					</div>
 				</div>
 				<!-- 요런 식으로 도서 리스트 계속 띄우기 -->
+				<!-- 구매한 도서 목록 리스트 -->
 				<div class="row">
 					<div class="col-11">
 						<div class="row">
-							<hr id="purchaseList_hr3">
+							<div class="col-12 purchaseList_hr"></div>
 						</div>
 						<div class="row">
 							<div class="col-2 purchaseList_img">
@@ -254,8 +257,8 @@
 									<div class="col-8">바보 | 2022.07.23</div>
 								</div>
 								<div class="row">
-									<div class="col-8">발송완료</div>
-									<div class="col-4">수량: 1개</div>
+									<div class="col-7">발송완료</div>
+									<div class="col-2">수량: 1개</div>
 								</div>
 								<div class="row">
 									<div class="col-12">
@@ -267,17 +270,18 @@
 								</div>
 							</div>
 							<div class="col-2" id="purchaseList_btns">
-								<a href="./purchaseDetail.jsp"><button>배송조회</button></a> <a
-									href="./review.jsp"><button>리뷰작성</button></a> <a
-									href="./purchaseDetail.jsp"><button>구매상세</button></a>
+								<a href="./purchaseDetail.jsp"><button>배송조회</button></a>
+								<a href="./review.jsp"><button>리뷰작성</button></a>
+								<a href="./purchaseDetail.jsp"><button>구매상세</button></a>
+								<a href="#"><button class="purchaseCancel">구매취소</button></a>
 							</div>
 						</div>
 						<div class="row">
-							<hr id="purchaseList_hr4">
+							<div class="col-12 purchaseList_hr"></div>
 						</div>
 					</div>
 				</div>
-
+				
 				<!-- 페이징 -->
 				<div>
 					<nav aria-label="Page navigation example">
@@ -376,5 +380,27 @@
 				return false;
 		}
 	}
+	 
+	 $().ready(function () {
+		    $(".purchaseCancel").click(function () {
+		        Swal.fire({
+		            title: '구매를 취소하시겠습니까?',
+		            text: "취소하시면 상품을 받아볼 수 없습니다. 🥺",
+		            icon: 'warning',
+		            showCancelButton: true,
+		            confirmButtonColor: '#3085d6',
+		            cancelButtonColor: '#d33',
+		            confirmButtonText: '예',
+		            cancelButtonText: '아니오'
+		        }).then((result) => {
+		            if (result.isConfirmed) {
+		                Swal.fire(
+		                    '구매가 취소되었습니다.',
+		                    '즐거운 쇼핑되세요 😊',
+		                )
+		            }
+		        })
+		    });
+		});
 </script>
 <jsp:include page="./footer.jsp"></jsp:include>
