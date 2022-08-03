@@ -4,7 +4,7 @@
 <jsp:include page="./header.jsp"></jsp:include>
 <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
 <link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
-<link href="./css/purchaseList_style.css" rel="stylesheet">
+<link href="./css/mypage_Purchase.css" rel="stylesheet">
 <script src="./datepicker/js/datepicker.js"></script>
 <script src="./datepicker/js/datepicker.ko.js"></script> <!-- 달력 한글 추가를 위해 커스텀 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script><!-- alert 창 예쁘게 -->
@@ -220,9 +220,7 @@
 									<div class="col-2">수량: 1개</div>
 								</div>
 								<div class="row">
-									<div class="col-12">
-										<hr>
-									</div>
+										<div class="col-12 purchaseList_hr"></div>
 								</div>
 								<div class="row">
 									<div class="col-11">상품은 잘 받아보셨나요? 확인하시고 구매 확정 진행해주세요!</div>
@@ -261,9 +259,7 @@
 									<div class="col-2">수량: 1개</div>
 								</div>
 								<div class="row">
-									<div class="col-12">
-										<hr>
-									</div>
+									<div class="col-12 purchaseList_hr"></div>
 								</div>
 								<div class="row">
 									<div class="col-11">상품은 잘 받아보셨나요? 확인하시고 구매 확정 진행해주세요!</div>

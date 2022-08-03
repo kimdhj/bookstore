@@ -77,9 +77,9 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">공지사항</a>
                         <div class="dropdown-menu m-0">
-                            <a href="info.jsp" class="dropdown-item">소개</a>
-                            <a href="notice.jsp" class="dropdown-item">공지사항</a>
-                            <a href="serviceCenter.jsp" class="dropdown-item">Q&A</a>
+                            <a href="info_Info.jsp" class="dropdown-item">소개</a>
+                            <a href="notice_Notice.jsp" class="dropdown-item">공지사항</a>
+                            <a href="notice_Cs.jsp" class="dropdown-item">Q&A</a>
 
                         </div>
                     </div>
