@@ -44,6 +44,7 @@
 					<div class="row">
 						<div class="col-1"></div>
 						<div class="col-3">
+<<<<<<< HEAD
 							<a href="#"><img src="./img/info_subscribe.png" width="100%;" /></a>
 						</div>
 						<div class="col-1"></div>
@@ -53,6 +54,17 @@
 						<div class="col-1"></div>
 						<div class="col-3">
 							<a href="#"><img src="./img/info_shop.png" width="100%;" /></a>
+=======
+							<img src="./img/info_subscribe.png" width="100%;" />
+						</div>
+						<div class="col-1"></div>
+						<div class="col-3">
+							<img src="./img/info_author.png" width="100%;" />
+						</div>
+						<div class="col-1"></div>
+						<div class="col-3">
+							<img src="./img/info_shop.png" width="100%;" />
+>>>>>>> main
 						</div>
 					</div>
 					<div class="row">

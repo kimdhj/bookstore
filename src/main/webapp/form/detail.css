@@ -1,7 +1,9 @@
 #detail_wrapper {
   margin-top: 15% !important;
 }
-
+#detail_wrapper * {
+  font-size: 1vw;
+}
 /* 이미지관련 */
 #img_box > img {
   min-height: 200px;
@@ -124,7 +126,7 @@
   display: none; /* 라디오박스 감춤 */
 }
 #myform label {
-  font-size: 3em; /* 이모지 크기 */
+  font-size: 2vw; /* 이모지 크기 */
   color: transparent; /* 기존 이모지 컬러 제거 */
   text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
 }
@@ -136,4 +138,12 @@
 #review_starSolo > #star_solo > #myform {
   font-size: 0.6vw;
   text-align: left;
+}
+#cash_btn button {
+  font-weight: bolder;
+  word-break: keep-all;
+}
+/* 부트스트랩 덮어 */
+.bg-gray {
+  background-color: rgb(108, 117, 125) !important;
 }
