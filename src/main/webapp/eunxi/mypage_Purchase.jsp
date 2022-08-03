@@ -4,7 +4,7 @@
 <jsp:include page="./header.jsp"></jsp:include>
 <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
 <link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
-<link href="./css/purchaseList_style.css" rel="stylesheet">
+<link href="./css/npt.css" rel="stylesheet">
 <script src="./datepicker/js/datepicker.js"></script>
 <script src="./datepicker/js/datepicker.ko.js"></script> <!-- 달력 한글 추가를 위해 커스텀 -->
 </head>

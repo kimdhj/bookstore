@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <head>
-	<link href="./css/notice_style.css" rel="stylesheet">
+	<link href="./css/notice_Notice.css" rel="stylesheet">
 </head>	
 <jsp:include page="./header.jsp"></jsp:include>
 <div class="row">

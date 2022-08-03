@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <head>
-<link href="./css/info_style.css" rel="stylesheet">
+<link href="./css/info_Info.css" rel="stylesheet">
 </head>
 <jsp:include page="./header.jsp"></jsp:include>
 <div class="row">
@@ -10,7 +10,7 @@
 		<!-- 이미지 : 클릭하면 메인 혹은 소개 페이지로 이동하도록 넣어봤슈... -->
 		<div class="row">
 			<div id="img">
-				<a href="info.jsp"><img src="./img/info2.png"
+				<a href="info_Info.jsp"><img src="./img/info_info2.png"
 					style="display: block;" width="100%;" /></a>
 			</div>
 		</div>
@@ -40,15 +40,15 @@
 					<div class="row">
 						<div class="col-1"></div>
 						<div class="col-3">
-							<img src="./img/subscribe.png" width="100%;" />
+							<img src="./img/info_subscribe.png" width="100%;" />
 						</div>
 						<div class="col-1"></div>
 						<div class="col-3">
-							<img src="./img/author.png" width="100%;" />
+							<img src="./img/info_author.png" width="100%;" />
 						</div>
 						<div class="col-1"></div>
 						<div class="col-3">
-							<img src="./img/shop.png" width="100%;" />
+							<img src="./img/info_shop.png" width="100%;" />
 						</div>
 					</div>
 					<div class="row">
