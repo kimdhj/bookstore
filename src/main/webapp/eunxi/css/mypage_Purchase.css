@@ -2,7 +2,6 @@
 
 #purchaseList_name{
 	margin-top: 4%;
-	margin-bottom: 2%;
 }
 .purchaseList_img{
 	margin: auto;
@@ -15,11 +14,12 @@
 	margin-bottom: 2%;
 }
 
-#purchaseList_calendar{
+.purchaseList_calendar{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 .purchaseList_hr{
 	border: 1px solid black;
 	border-bottom: 0px;
@@ -28,29 +28,69 @@
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-#purchaseList_hr1{
-	background-color: black;
-}
-#purchaseList_hr2{
-	margin-top: 2%;
-	margin-bottom: 5%;
-	background-color: black;
-}
-#purchaseList_hr3{
-	margin-bottom: 2%;
-	margin-top: 2%;
-	background-color: black;
-}
-#purchaseList_hr4{
-	margin-bottom: 3%;
-	margin-top: 2%;
-	background-color: black;
+
+.purchaseList_box{
+	background-color: rgb(247, 247, 247);
+	border-radius: 15px;
 }
 
-#purchaseList_btns>*>*{
+.purchaseList_btns{
+	padding-top: 20px;
+}
+.purchaseList_btns>*>*{
 	margin: auto;
 	display: block;
 	margin-bottom: 20%;
 }
 
-
+#middle_menu {
+  margin-top: 2% !important;
+}
+#middle_menu * {
+  word-break: keep-all;
+}
+#day_find > * {
+  border-top: 1px solid blue;
+}
+#option_find > * {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid blue;
+}
+#day_title,
+#option_title {
+  border-right: 2px solid gray;
+  background-color: rgb(247, 247, 247);
+  padding: 2% !important;
+  text-align: center;
+}
+#day_btn {
+  padding: 2% !important;
+}
+#dayAdd > * {
+  background-color: rgb(247, 247, 247);
+  border-color: rgb(247, 247, 247) !important;
+  color: black;
+}
+#dayAdd > *:first-child {
+  border-radius: 50px 0px 0px 50px;
+}
+#dayAdd > *:last-child {
+  border-radius: 0px 50px 50px 0px;
+}
+#middle_menu > * > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#day_select,
+#day_calendar,
+#day_btn {
+  padding: 0px;
+}
+#option_input {
+  margin-top: 3%;
+}
+#day_calendar {
+  display: flex;
+  justify-content: center;
+}

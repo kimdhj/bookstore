@@ -169,7 +169,6 @@
 					<div class="row">
 						<div class="col-11">
 							<h3 id="purchaseDetail_name">구매 상세</h3>
-							<div class="col-12 purchaseDetail_hr mb-1"></div>
 							<div class="col-12" id="purchaseDetail_box">
 								<div class="row">
 									<div class="col-3">주문일자</div>
