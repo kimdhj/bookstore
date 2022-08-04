@@ -1,15 +1,20 @@
 /*subscribePay에서 복사 시작*/
 
 // 구독 가격
-let subPrice = 30000;
+let subPrice = $("#subPrice").text();
 // 쿠폰 할인가격
-let new_user_coupon = 30000;
-let my_friend_coupon = 40000;
-let roulette_coupon = 50000;
+let new_user_coupon = $("#new_user_coupon_val").text();
+let my_friend_coupon = $("#my_friend_coupon_val").text();
+let roulette_coupon = $("#roulette_coupon_val").text();
 doSumsum();
 doAddPoint();
+doBookPrice();
 // 도서 가격
-let bookPrice = 20000;
+let bookPrice = $("#bookPrice").text();
+
+console.log(new_user_coupon);
+console.log(my_friend_coupon);
+console.log(roulette_coupon);
 
 // 구독 개월 수 버튼
 /*
@@ -213,6 +218,15 @@ $("#input_text_size").on("change", function () {
   doSumsum();
 });
 //쿠폰 선택 합시다 끝
+
+// 처음에 도서 가격 출력
+function doBookPrice() {
+  let booksSum =
+    parseInt($("#bookPrice").text().replace(/,/gi, "")) *
+    parseInt($("#howmanybook").val());
+  $("#bookPrice_cal").number(booksSum);
+}
+// 처음에 도서 가격 출력 끝
 
 // 합계 구합시다 시작
 function doSumsum() {
