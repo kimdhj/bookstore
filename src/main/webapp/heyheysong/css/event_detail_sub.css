@@ -11,8 +11,14 @@
   border-color: rgb(212, 212, 212) !important;
 }
 #Content {
-  height: 200vh;
-  background-image: url("../img/subscribe_BG.png");
+  height: 150vh;
+  background-image: url("../img/subscribe_String2.png");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+#subscribe_String {
+  width: 100%;
+}
+#brbrbrbr {
+  height: 30vw;
 }
