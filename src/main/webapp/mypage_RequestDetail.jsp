@@ -66,7 +66,6 @@
 					    </tr>
 					  </tbody>
 					</table>
-					<!-- 문의글 끝 -->
 					
 					<div class="container">
 					  <div class="row">
@@ -79,6 +78,37 @@
 						</div>
 					  </div>
 					</div>
+					<!-- 문의글 끝 -->
+					
+					
+					
+					<!-- 답글 시작 -->
+					<table class="table">
+					  <thead>
+					    <tr>
+					      <th scope="col-3">Q&A</th>
+					      <th scope="col-9"><input type="text" class="form-control" id="exampleFormControlInput1" placeholder="답변제목"></th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row" colspan="2"><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></th>
+					    </tr>
+					  </tbody>
+					</table>
+					
+					<div class="container">
+					  <div class="row">
+					    <div class="col-8"></div>
+					    <div class="col-2">
+					    	<button type="button" class="btn btn-primary">등록하기</button>
+						</div>
+						<div class="col-2">
+					    	<button type="button" class="btn btn-light">목록</button>
+						</div>
+					  </div>
+					</div>
+					<!-- 답글 끝 -->
                     
 
                 </div>
