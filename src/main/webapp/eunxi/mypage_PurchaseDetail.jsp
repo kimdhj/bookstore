@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <jsp:include page="./header.jsp"></jsp:include>
-<link href="./css/purchaseDetail_style.css" rel="stylesheet">
+<link href="./css/mypage_PurchaseDetail.css" rel="stylesheet">
 <!-- Page Header Start -->
 <div class="container-fluid page-header wow fadeIn"
 	data-wow-delay="0.1s">
@@ -169,7 +169,6 @@
 					<div class="row">
 						<div class="col-11">
 							<h3 id="purchaseDetail_name">구매 상세</h3>
-							<div class="col-12 purchaseDetail_hr mb-1"></div>
 							<div class="col-12" id="purchaseDetail_box">
 								<div class="row">
 									<div class="col-3">주문일자</div>
@@ -180,13 +179,13 @@
 								</div>
 							</div>
 							<div class="col-12 purchaseDetail_hr mt-1"></div>
-							<div class="row purcahseDetail_content2">
+							<div class="row purcahseDetail_content2 mt-2 mb-2">
 								<div class="col-3">상품주문번호</div>
 								<div class="col-5 text-start">상품정보</div>
 								<div class="col-2">상품금액(수량)</div>
 								<div class="col-2">진행상태</div>
 							</div>
-							<div class="col-12 purchaseDetail_hr mt-1"></div>
+							<div class="col-12 purchaseDetail_hr mb-2"></div>
 							<div class="row purcahseDetail_content3">
 								<div class="col-3">2022072312345678</div>
 								<div class="col-2">
@@ -223,7 +222,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 purchaseDetail_hr mt-1"></div>
+							<div class="col-12 purchaseDetail_hr mt-2"></div>
 						</div>
 					</div>
 				</div>
@@ -232,7 +231,7 @@
 				<div>
 					<div class="row">
 						<div class="col-11">
-							<h6>주문/결제 금액 정보</h6>
+							<h6 class="mt-3">주문/결제 금액 정보</h6>
 							<div class="col-12 purchaseDetail_hr mt-1"></div>
 						</div>
 						<div class="col-11">

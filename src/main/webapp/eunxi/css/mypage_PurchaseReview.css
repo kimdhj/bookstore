@@ -5,7 +5,7 @@
 }
 
 #review_name2 {
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 #review_title {
@@ -36,4 +36,10 @@
 
 #review_btn>* {
 	margin-right: 10%;
+}
+
+.review_box{
+	background-color: rgb(247, 247, 247);
+	border-radius: 15px;
+	height: 220px;
 }

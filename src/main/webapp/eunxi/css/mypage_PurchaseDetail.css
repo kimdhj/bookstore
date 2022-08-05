@@ -34,13 +34,13 @@
 	border: 1px solid black;
 	border-top: 0px;
 	border-bottom: 0px;
-	background-color: lightsalmon;
+	background-color: rgb(247, 247, 247);
 	min-height: 15vh;
 	margin-right: 12px;
 }
 
 .purchaseDetail_recipientInfo {
-	background-color: lightsalmon;
+	background-color: rgb(238, 238, 238);
 	padding-left: 1%;
 	font-weight: bold;
 	padding-bottom: 0.5%;
@@ -51,7 +51,7 @@
 
 #purchaseDetail_box {
 	font-weight: bold;
-	background-color: lightsalmon;
+	background-color: rgb(247, 247, 247);
 }
 
 .purchaseDetail_box2 {
@@ -129,7 +129,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: lightsalmon;
+	background-color: rgb(247, 247, 247);
 	font-size: 0.8vw;
 }
 
@@ -138,6 +138,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: small;
 }
 
 #purchaseDetail_box3{

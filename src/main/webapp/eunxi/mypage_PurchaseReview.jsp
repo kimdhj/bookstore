@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <jsp:include page="./header.jsp"></jsp:include>
 <head>
-<link href="./css/review_style.css" rel="stylesheet">
+<link href="./css/mypage_PurchaseReview.css" rel="stylesheet">
 <link href="./css/star_style.css" rel="stylesheet">
 </head>
 <!-- Page Header Start -->
@@ -178,16 +178,15 @@
 				<!-- 리뷰 작성 페이지 -->
 				<div class="row">
 					<div class="col-11">
-						<div class="row">
+						<div class="row mb-2">
 							<h3 id="review_name">my Review</h3>
-							<div class="col-12 review_hr"></div>
 						</div>
-						<div class="row">
+						<div class="row review_box">
 							<div class="col-2 review_img">
 								<img width="100%" src="./img/product1-8.jpg">
 							</div>
 							<div class="col-7">
-								<div class="row">
+								<div class="row mt-3">
 									<h4 id="review_title">해리포터</h4>
 								</div>
 								<div class="row">
@@ -222,13 +221,10 @@
 								</div>
 							</div>
 							<div class="col-3">
-								<div class="row">
+								<div class="row mt-3">
 									<a href="#">다른 리뷰 보러가기</a>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 review_hr"></div>
 						</div>
 					</div>
 				</div>
