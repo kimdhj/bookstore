@@ -27,14 +27,13 @@
     </div>
     <!-- Page Header End -->
     
-	<!-- 여기서부터 바디 작업 하면됨 -->    
+	<!-- 여기서부터 바디 작업 하면됨 -->  
 	
-	    
-    
     <!-- Footer Start -->
     	<!-- Common Footer include -->
         <jsp:include page="commonjsp/common_footer.jsp"></jsp:include>
         
 	<!-- Footer End -->
+	
 </body>
 </html>
