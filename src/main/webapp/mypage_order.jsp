@@ -115,10 +115,10 @@
 					      <th scope="row" class="bg-light align-middle">기간조회</th>
 					      <td>
 					      	<div class="btn btn-group" role="group" aria-label="Basic example">
-							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" value="1">1주일</button>
-							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" value="2">1개월</button>
-							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" value="3">3개월</button>
-							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" value="4">6개월</button>
+							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" id="oneWeek" value="1" onclick="searchDateOneWeek()">1주일</button>
+							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" id="oneMonth" value="2" onclick="searchDateOneMonth()">1개월</button>
+							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" id="threeMonth" value="3" onclick="searchDateThreeMonth()">3개월</button>
+							  <button type="button" class="btn btn-dark btn-sm" name="filterDate" id="sixMonth" value="4" onclick="searchDateSixMonth()">6개월</button>
 							</div>
 					      	<div>
 					      		오늘 날짜 : <span id="today"></span>
@@ -258,6 +258,7 @@
                 dateFormat: "yy-mm-dd",             // 날짜의 형식
                 changeMonth: true,                  // 월을 이동하기 위한 선택상자 표시여부
                 //minDate: 0,                       // 선택할수있는 최소날짜, ( 0 : 오늘 이전 날짜 선택 불가)
+                maxDate: 0,
                 onClose: function( selectedDate ) {    
                     // 시작일(fromDate) datepicker가 닫힐때
                     // 종료일(toDate)의 선택할수있는 최소 날짜(minDate)를 선택한 시작일로 지정
@@ -274,6 +275,7 @@
                 dateFormat: "yy-mm-dd",
                 changeMonth: true,
                 //minDate: 0, // 오늘 이전 날짜 선택 불가
+                maxDate: 0,
                 onClose: function( selectedDate ) {
                     // 종료일(toDate) datepicker가 닫힐때
                     // 시작일(fromDate)의 선택할수있는 최대 날짜(maxDate)를 선택한 종료일로 지정 
@@ -314,6 +316,84 @@
     		location.href = link;
     	}
     	
+    </script>
+    <script>
+    	//기간조회
+     	function searchDateOneWeek() {
+    		let d = new Date();
+    		const yearNow = d.getFullYear();
+    		const monthNow = ('0' + (d.getMonth() + 1)).slice(-2);
+    		const dayNow = ('0' + d.getDate()).slice(-2);
+    		const today = yearNow + "-" + monthNow + "-" + dayNow;
+    		
+    		let sel_day = -7; //일주일전
+    		d.setDate(d.getDate() + sel_day );
+
+    		let year    = d.getFullYear();
+    		let month   = ('0' + (d.getMonth() +  1 )).slice(-2);
+    		let day     = ('0' + d.getDate()).slice(-2);
+    		dt = year+"-"+month+"-"+day;
+    		console.log(dt);
+    		document.getElementById("fromDate").value = dt;
+    		document.getElementById("toDate").value = today;
+    	} 
+    	
+    	function searchDateOneMonth() {
+    		let d = new Date();
+    		const yearNow = d.getFullYear();
+    		const monthNow = ('0' + (d.getMonth() + 1)).slice(-2);
+    		const dayNow = ('0' + d.getDate()).slice(-2);
+    		const today = yearNow + "-" + monthNow + "-" + dayNow;
+    		    		
+    		let sel_month = -1;
+    		d.setMonth(d.getMonth() + sel_month);
+    		
+    		let year    = d.getFullYear();
+    		let month   = ('0' + (d.getMonth() +  1 )).slice(-2);
+    		let day     = ('0' + d.getDate()).slice(-2);
+    		dt = year+"-"+month+"-"+day;
+    		console.log(dt);
+    		document.getElementById("fromDate").value = dt;
+    		document.getElementById("toDate").value = today;
+    	}
+    	
+    	function searchDateThreeMonth() {
+    		let d = new Date();
+    		const yearNow = d.getFullYear();
+    		const monthNow = ('0' + (d.getMonth() + 1)).slice(-2);
+    		const dayNow = ('0' + d.getDate()).slice(-2);
+    		const today = yearNow + "-" + monthNow + "-" + dayNow;
+    		
+    		let sel_month = -3;
+    		d.setMonth(d.getMonth() + sel_month);
+    		
+    		let year    = d.getFullYear();
+    		let month   = ('0' + (d.getMonth() +  1 )).slice(-2);
+    		let day     = ('0' + d.getDate()).slice(-2);
+    		dt = year+"-"+month+"-"+day;
+    		console.log(dt);
+    		document.getElementById("fromDate").value = dt;
+    		document.getElementById("toDate").value = today;
+    	}
+    	
+    	function searchDateSixMonth() {
+    		let d = new Date();
+    		const yearNow = d.getFullYear();
+    		const monthNow = ('0' + (d.getMonth() + 1)).slice(-2);
+    		const dayNow = ('0' + d.getDate()).slice(-2);
+    		const today = yearNow + "-" + monthNow + "-" + dayNow;
+    		
+    		let sel_month = -6;
+    		d.setMonth(d.getMonth() + sel_month);
+    		
+    		let year    = d.getFullYear();
+    		let month   = ('0' + (d.getMonth() +  1 )).slice(-2);
+    		let day     = ('0' + d.getDate()).slice(-2);
+    		dt = year+"-"+month+"-"+day;
+    		console.log(dt);
+    		document.getElementById("fromDate").value = dt;
+    		document.getElementById("toDate").value = today;
+    	}
     </script>
 </body>
 
