@@ -119,7 +119,8 @@
 					<p class="rowColumn" contenteditable="false" data-default="5,320p">5,320p</p>
 				</td>
 				<td>
-					<p class="rowColumn" contenteditable="false" data-default="22장">22장</p>
+					<p class="rowColumn" contenteditable="false" data-default="22">22<span>장</span></p>
+					
 				</td>
 			</tr>
 			<tr>
