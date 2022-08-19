@@ -201,7 +201,6 @@
 									<button type="button" class="btn btn-secondary year">1년</button>
 								</div>
 							</div>
-
 						</div>
 					</div>
 					<div class="row" id="option_find">
@@ -254,7 +253,7 @@
 							<a href="./purchaseDetail.jsp"><button>배송조회</button></a> <a
 								href="./review.jsp"><button>리뷰작성</button></a> <a
 								href="./purchaseDetail.jsp"><button>구매상세</button></a> <a
-								href="#"><button class="purchaseCancel">구매취소</button></a>
+								href="#"><button class="purchaseCancel del">구매취소</button></a>
 						</div>
 					</div>
 				</div>
@@ -285,7 +284,7 @@
 							<a href="./purchaseDetail.jsp"><button>배송조회</button></a> <a
 								href="./review.jsp"><button>리뷰작성</button></a> <a
 								href="./purchaseDetail.jsp"><button>구매상세</button></a> <a
-								href="#"><button class="purchaseCancel">구매취소</button></a>
+								href="#"><button class="purchaseCancel del">구매취소</button></a>
 						</div>
 					</div>
 				</div>
@@ -465,6 +464,10 @@
             });
 
         });
+        
+        $(".del").click(function (e) {
+            $(this).parents('tr').remove();
+          })
     </script>
 </body>
 </html>

@@ -4,6 +4,7 @@
 <head>
 <link href="./css/mypage_PurchaseReview.css" rel="stylesheet">
 <link href="./css/star_style.css" rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
 </head>
 <!-- Page Header Start -->
 <div class="container-fluid page-header wow fadeIn"
@@ -237,7 +238,7 @@
 							<div class="col-12 review_hr"></div>
 						</div>
 						<div class="row" id="review_textarea">
-							<textarea rows="10"></textarea>
+							<div id="summernote"></div>
 						</div>
 					</div>
 					<div col="col-1"></div>
@@ -256,4 +257,5 @@
 		<!-- 마이페이지 메인 바디 끝 -->
 	</div>
 </div>
+
 <jsp:include page="./footer.jsp"></jsp:include>

@@ -137,6 +137,7 @@
     <script src="lib/wow/wow.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#chat_button").click(function () {
@@ -559,7 +560,15 @@
             });
             search_btn
         });
-
+        
+        $(document).ready(function () {
+            $('#summernote').summernote({
+                placeholder: '내용을 작성하세요',
+                height: 400,
+                maxHeight: 400
+            });
+        });
 
     </script>
-
+</body>
+</html>

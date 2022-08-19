@@ -11,11 +11,7 @@
 		<div class="col-8">
 			<!-- FAQ : 고정 -->
 			<div class="row">
-				<div class="col-9" id="cs_name">FAQ</div>
-				<div class="col cs_input">
-					<input type="text">&nbsp;
-					<button>검색</button>
-				</div>
+				<div class="col-8" id="cs_name">FAQ</div>
 			</div>
 			<div class="row" id="cs_line">
 				<div class="col-12 row" id="cs_faq">
@@ -33,7 +29,7 @@
 					</div>
 					<div class="col">
 						<img src="./img/cs_programmer.png" width="50%"> <a href="#"
-							id="img_user">로그인</a>
+							id="img_user">회원</a>
 					</div>
 				</div>
 			</div>
@@ -41,12 +37,21 @@
 			<!-- FAQ 내용 : 내용 변함 -->
 			<!-- 주문/결제 -->
 			<div id="form-select1" class="hide">
+			<div style="font-weight: bold">
+			⊙ 주문/결제
+			</div>
+			<div class="col cs_input">
 				<select aria-label="Default select example">
-					<option selected>주문/결제</option>
+					<option selected>전체</option>
 					<option value="1">주문</option>
 					<option value="2">결제</option>
 					<option value="3">포인트</option>
+					<option value="4">쿠폰</option>
+					<option value="5">기타</option>
 				</select>
+					&nbsp;<input type="text" placeholder="궁금한 내용 입력해주세요">&nbsp;
+					<button>검색</button>
+				</div>
 				<div class="table" id="table_payment">
 					<div class="row" id="table_payment_height">
 						<div class="col-4">번호</div>
@@ -77,12 +82,19 @@
 
 			<!-- 배송/수령일 안내 -->
 			<div id="form-select2" class="hide">
+			<div style="font-weight: bold">			
+			⊙ 배송/수령일 안내
+			</div>
+				<div class="col cs_input">
 				<select aria-label="Default select example">
-					<option selected>배송/수령일 안내</option>
-					<option value="1">주문</option>
-					<option value="2">결제</option>
-					<option value="3">포인트</option>
+					<option selected>전체</option>
+					<option value="1">배송료</option>
+					<option value="2">배송안내</option>
+					<option value="3">기타</option>
 				</select>
+					&nbsp;<input type="text" placeholder="궁금한 내용 입력해주세요">&nbsp;
+					<button>검색</button>
+				</div>
 				<div class="table" id="table_delivery">
 					<div class="row" id="table_delivery_height">
 						<div class="col-4">번호</div>
@@ -113,12 +125,20 @@
 
 			<!-- 반품/교환/환불 -->
 			<div id="form-select3" class="hide">
+			<div style="font-weight: bold">
+			⊙ 반품/교환/환불
+			</div>
+				<div class="col cs_input">
 				<select aria-label="Default select example">
-					<option selected>반품/교환/환불</option>
-					<option value="1">주문</option>
-					<option value="2">결제</option>
-					<option value="3">포인트</option>
+					<option selected>전체</option>
+					<option value="1">주문취소/변경</option>
+					<option value="2">반품/교환/환불</option>
+					<option value="3">주의사항</option>
+					<option value="4">기타</option>
 				</select>
+					&nbsp;<input type="text" placeholder="궁금한 내용 입력해주세요">&nbsp;
+					<button>검색</button>
+				</div>
 				<div class="table" id="table_change">
 					<div class="row" id="table_change_height">
 						<div class="col-4">번호</div>
@@ -149,12 +169,20 @@
 
 			<!-- 로그인 -->
 			<div id="form-select4" class="hide">
+			<div style="font-weight: bold">
+			⊙ 회원
+			</div>
+				<div class="col cs_input">
 				<select aria-label="Default select example">
-					<option selected>로그인</option>
-					<option value="1">주문</option>
-					<option value="2">결제</option>
-					<option value="3">포인트</option>
+					<option selected>전체</option>
+					<option value="1">회원가입/탈퇴</option>
+					<option value="2">회원정보 확인/변경</option>
+					<option value="3">개인정보 유효기간제</option>
+					<option value="4">기타</option>
 				</select>
+					&nbsp;<input type="text" placeholder="궁금한 내용 입력해주세요">&nbsp;
+					<button>검색</button>
+				</div>
 				<div class="table" id="table_user">
 					<div class="row" id="table_user_height">
 						<div class="col-4">번호</div>
@@ -185,7 +213,7 @@
 
 			<!-- QnA : 고정 -->
 			<div class="row cs_qna">
-				<div class="col-8 m-0 mt-4" id="cs_name2">QnA</div>
+				<div class="col-7 m-0 mt-4" id="cs_name2">QnA</div>
 				<div class="col m-0 align-items-center">
 					<button class="mt-5" id="cs_btn">문의하기</button>
 					<input type="text">&nbsp;
