@@ -44,3 +44,51 @@ div.bg-white {
   height: 50vh;
   overflow: auto;
 }
+
+#input_line_top *{
+	font-size: 1vw;
+}
+
+.qnaDetail_font{
+	font-weight: bolder;
+}
+
+.note-color-all button.active +.note-dropdown-menu>div:nth-child(2) {
+
+   display:none !important;
+}
+.note-color-all button.active +.note-dropdown-menu {
+
+   min-width:0px !important;
+}
+.note-current-fontsize + .note-icon-caret:before,.note-current-fontname + .note-icon-caret:before, .note-icon-table + .note-icon-caret:before, .note-icon-align-left + .note-icon-caret:before, .note-icon-text-height + .note-icon-caret:before{
+	content: "" !important;
+}
+
+.note-current-color-button + .dropdown-toggle:after{
+	content:none !important;
+}
+
+#input_line_top *{
+	font-size: 1vw;
+}
+
+.note-modal-footer{
+	margin-bottom: 5%;
+}
+
+.bi-caret-right-fill:before{
+	content: '\25B6';
+}
+
+.bi-caret-left-fill:before{
+	content: '\25C0';
+}
+
+#buttons{
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-left: 1px;
+}
+
+

@@ -2,9 +2,10 @@
 	pageEncoding="UTF-8"%>
 <jsp:include page="./header.jsp"></jsp:include>
 <head>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 <link href="./css/mypage_PurchaseReview.css" rel="stylesheet">
 <link href="./css/star_style.css" rel="stylesheet">
-<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+<!-- include summernote css/js-->
 </head>
 <!-- Page Header Start -->
 <div class="container-fluid page-header wow fadeIn"
@@ -20,7 +21,7 @@
 			</ol>
 		</nav>
 	</div>
-</div>
+</div>S
 <!-- Page Header End -->
 
 <!-- Contact Start -->
@@ -238,7 +239,7 @@
 							<div class="col-12 review_hr"></div>
 						</div>
 						<div class="row" id="review_textarea">
-							<div id="summernote"></div>
+							<div class="summernote"></div>
 						</div>
 					</div>
 					<div col="col-1"></div>

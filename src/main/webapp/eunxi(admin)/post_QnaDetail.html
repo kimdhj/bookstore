@@ -15,13 +15,13 @@
 <!-- Template Stylesheet -->
 <link href="css/style.css" rel="stylesheet">
 <link href="./css/test.css" rel="stylesheet">
-<link href="./css/post_Notice.css" rel="stylesheet" />
+<link href="./css/post_QnaDetail.css" rel="stylesheet" />
+
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 </head>
 
 <body>
-
 	<!--  Body -->
-
 	<div class="page-flex">
 		<!-- ! Sidebar -->
 		<aside class="sidebar">
@@ -152,14 +152,14 @@
 
 			<div id="all_box" class="bg-white w-100">
 				<div class="row d-flex align-items-center" id="input_line_top">
-					<div class="col-1 mt-2 mb-2">제목</div>
+					<div class="col-1 mt-2 mb-2 qnaDetail_font">제목</div>
 					<div class="col-3" style="padding-left: 0px;">문의 드립니다.</div>
 					<div class="row"></div>
-					<div class="col-1 mb-2" style="padding-right: 0px;">번호</div>
+					<div class="col-1 mb-2 qnaDetail_font" style="padding-right: 0px;">번호</div>
 					<div class="col-3 mb-2" style="padding-left: 0px;">31394</div>
-					<div class="col-1 mb-2" style="padding-right: 0px;">작성자</div>
+					<div class="col-1 mb-2 qnaDetail_font" style="padding-right: 0px;">작성자</div>
 					<div class="col-3 mb-2" style="padding-left: 0px;">qjawns</div>
-					<div class="col-1 mb-2"
+					<div class="col-1 mb-2 qnaDetail_font"
 						style="padding-right: 0px; margin-left: 5%;">등록일자</div>
 					<div class="col mb-2" style="padding-left: 0px;">2018.08.14</div>
 				</div>
@@ -180,7 +180,7 @@
 
 			<div class="row d-flex justify-content-between mt-2 mb-2"
 				id="buttons">
-				<button class="col-auto bg-white border-1">
+				<button class="col-auto bg-white border-1" style="border: 1px solid black;">
 					<i class="bi bi-caret-left-fill"></i>
 				</button>
 				<div class="row col-auto">
@@ -189,42 +189,44 @@
 					<button class="col-auto bg-white border-1 qna_del">문의삭제</button>
 					<button class="col-auto bg-white border-1">목록</button>
 				</div>
-				<button class="col-auto bg-white border-1">
+				<button class="col-auto bg-white border-1" style="border: 1px solid black;">
 					<i class="bi bi-caret-right-fill"></i>
 				</button>
 			</div>
 
 			<!-- 문의 답변 작성란 -->
-				<div class="mb-0 p-0 form1">
+				<div class="mb-0 p-0 form1 hide">
 					<button id="all" class="select p-2">문의 답변하기</button>
 				</div>
 
-				<div id="all_box" class="bg-white w-100 form1">
+				<div id="all_box" class="bg-white w-100 form1 hide">
 					<div class="row d-flex align-items-center" id="input_line_top">
-						<div class="col-1 mt-2 mb-2">제목</div>
+						<div class="col-1 mt-2 mb-2 qnaDetail_font">제목</div>
 						<div class="col-3" style="padding-left: 0px;">[답변완료]문의드립니다.
 						</div>
-						<div class="col-1" style="padding-right: 0px;">파일첨부</div>
+						<div class="col-1 qnaDetail_font" style="padding-right: 0px;">파일첨부</div>
 						<div class="col-3" style="padding-left: 0px;">
 							<input type="file">
 						</div>
 						<div class="row"></div>
-						<div class="col-1 mb-2" style="padding-right: 0px;">번호</div>
+						<div class="col-1 mb-2 qnaDetail_font" style="padding-right: 0px;">번호</div>
 						<div class="col-3 mb-2" style="padding-left: 0px;">31394</div>
-						<div class="col-1 mb-2" style="padding-right: 0px;">작성자</div>
+						<div class="col-1 mb-2 qnaDetail_font" style="padding-right: 0px;">작성자</div>
 						<div class="col-3 mb-2" style="padding-left: 0px;">관리자</div>
-						<div class="col-1 mb-2"
+						<div class="col-1 mb-2 qnaDetail_font"
 							style="padding-right: 0px; margin-left: 5%;">등록일자</div>
 						<div class="col mb-2" style="padding-left: 0px;">2018.08.14</div>
 					</div>
 				</div>
-				<div id="all_box" class="bg-white w-100">
+				
+				<div id="all_box" class="bg-white w-100 hide form1">
 					<div class="row d-flex align-items-center" id="input_line_top">
 						<div class="row"></div>
-						<textarea rows="20" placeholder="문의 답변 내용 등록"></textarea>
+						<div class="summernote"></div>
 					</div>
 				</div>
-				<div id="all_box" class="bg-white w-100">
+				
+				<div id="all_box" class="bg-white w-100 hide form1">
 					<div class="row d-flex align-items-center" id="input_line_top">
 						<div class="col-1">비밀번호</div>
 						<div class="col">
@@ -232,22 +234,18 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="row d-flex justify-content-between mt-2 mb-2"
+				
+				<div class="row d-flex justify-content-between mt-2 mb-2 hide form1"
 					id="buttons">
-					<button class="col-auto bg-white border-1">
-						<i class="bi bi-caret-left-fill"></i>
-					</button>
-					<div class="row col-auto">
-						<button class="col-auto bg-white border-1 answer_add">등록</button>
+					<div class="col-5"></div>
+					<div class="row col-5">
+						<button class="col-auto bg-white border-1 answer_add ">등록</button>
 						<button class="col-auto bg-white border-1 answer_del">삭제</button>
 						<button class="col-auto bg-white border-1 qna_list">목록</button>
 					</div>
-					<button class="col-auto bg-white border-1">
-						<i class="bi bi-caret-right-fill"></i>
-					</button>
+					<div class="col-2"></div>
 				</div>
-		</div>
+			</div>
 
 
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -276,210 +274,7 @@
 		<script src=/js/script_admin.js"></script>
 		<!-- 알람창 예쁘게 -->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-		<script>
-    $(document).ready(function () {
-      // 상단 탭 버튼
-      $('#all').click(function () {
-
-        $('#all').removeClass("unselect");
-        $('#all').addClass("select");
-        $('#category').removeClass("select");
-        $('#category').addClass("unselect");
-
-        $('#cate_box').hide();
-        $('#all_box').show();
-      });
-      $('#category').click(function () {
-
-        $('#category').removeClass("unselect");
-        $('#category').addClass("select");
-        $('#all').removeClass("select");
-        $('#all').addClass("unselect");
-        $('#all_box').hide();
-        $('#cate_box').show();
-      });
-      // 상단 모든 카테고리 코드
-      // 클릭해서 삭제
-      $(".del").click(function (e) {
-
-        $(this).parents('tr').remove();
-      })
-      // 선택 된 요소 삭제
-      $(".seldel").click(function (e) {
-
-        console.log($('.delche:checked'))
-        $('.delche:checked').parents('tr').remove();
-        $('.allche').removeAttr('checked');
-      });
-      // 해제시 전체 클릭 비활성화+모두 클릭되면 전체 클릭 활성화
-      $('.delche:checked').click(function () {
-        // 해제시 전체 클릭 비활성화
-        $('.allche').prop("checked", false);
-        //  모두 클릭되면 전체 클릭 활성화
-        if ($('#all_box tbody>tr').length == $('.delche:checked').length) {
-          $('.allche').prop("checked", true);
-        }
-      });
-      //  전체 클릭 클릭시 전체온오프
-      $('.allche').click(function () {
-        if ($('.allche').is(':checked')) {
-          $('.delche').prop("checked", true);
-        } else {
-          $('.delche').prop("checked", false);
-        }
-      })
-      // checked 초기화
-      $('.delche').prop("checked", false);
-      $('.allche').prop("checked", false);
-      // 하단에 있는 카테고리 홍보 코드
-      // 리셋 버튼 코드 초기화
-      $('.reset').click(function (e) {
-        $(this).parents('tr').children('td:eq(3)').children().text('default');
-        $(this).parents('tr').children('td:eq(3)').children().attr("data-default", "default");
-      })
-      // 코드 변화 감지에 따른 행동
-      observer = new MutationObserver(function (mutations) {
-        mutations.forEach(function (mutation) {
-          console.log();
-          $(mutation.target).parents('tr').children('td:eq(1)').children().text('default')
-        });
-      });
-      const num = document.getElementsByClassName('num');
-      for (let i = 0; i < num.length; i++) {
-        observer.observe(document.getElementsByClassName('num')[i], { childList: true });
-      }
-
-
-    })
-
-
-
-  </script>
-		<script>
-    $(document).ready(function () {
-      select = $(".selectColumn");
-      selectfun();
-      function selectfun() {
-
-
-        // 더블 클릭시 원하는 요소로 변경
-        $(".selectColumn").dblclick(function (e) {
-          let text = $(this).text();
-          $(this).html(`<select class="row form-select" id="td select" aria-label="Default select example">
-              <option value="선택">옵션 선택</option>  
-              <option value="상위">상위</option>
-              <option value="중위">중위</option>
-              <option value="하위">하위</option>
-              </select>`);
-          let outthis = $(this);
-          // 값 변경시 글자로 변셩
-          $(this).children("select").change(function (e) {
-            console.log($(this));
-            text = e.target.value;
-            outthis.html(text);
-
-          });
-
-
-        })
-      }
-
-
-    })
-
-  </script>
-		<script>
-    // @breif contenteditable 속성을 가진경우
-    contents = document.getElementsByClassName("rowColumn");
-    document.addEventListener("DOMContentLoaded", function () {
-
-      // @breif rowColumn 클래스의 갯수 만큼 반복문을 실행한다.
-      Array.from(contents).forEach(function (content) {
-
-        // @breif 마우스로 해당영역을 더블클릭 한경우
-        content.addEventListener("dblclick", function (event) {
-
-          // @breif 전체 테이블 컬럼( td > p )에서 현재 사용중인 값의 존재여부를 확인한다.
-          Array.from(contents).forEach(function (defaultVal) {
-
-            // @details 빈값( null )이 존재하는지 체크한다.
-            /* if(
-                   defaultVal.textContent == ""
-                || defaultVal.textContent == null
-                || defaultVal.textContent == undefined
-                || (defaultVal.textContent != null
-                && typeof defaultVal.textContent == "object"
-                && !Object.keys(defaultVal.textContent).length == ""))
-            {
- 
-                // @details 내용이 존재하지 않다면 data 태그의 기본값으로 되돌린다.
-                defaultVal.textContent = defaultVal.dataset.default;
-            }
-             */
-
-            // @details 저장하지 않은 내용이라고 판단하여 data 태그의 기본값으로 되돌린다.
-            defaultVal.textContent = defaultVal.dataset.default;
-
-            // @breif 수정 불가 상태로 되돌린다.
-            defaultVal.contentEditable = false;
-            defaultVal.style.border = "0px";
-          });
-
-          if (content.isContentEditable == false) {
-
-            // @details 편집 가능 상태로 변경
-            content.contentEditable = true;
-
-            // @details 텍스트 문구 변경
-            // content.textContent = "";
-
-            // @details CSS 효과 추가
-            content.style.border = "1px solid #FFB6C1";
-
-            // @details 포커스 지정
-            content.focus();
-
-          }
-
-        });
-
-
-
-        // @breif 키보드 입력이 방생한 경우 실행
-        content.addEventListener("keypress", function (event) {
-
-          // @breif Enter키 입력시 실행
-          if (event.key === "Enter") {
-
-            // @details 입력된 값이 빈값( null )인지 체크한다.
-            if (content.textContent == "" || content.textContent == null || content.textContent == undefined || (content.textContent != null && typeof content.textContent == "object" && !Object.keys(content.textContent).length == "")) {
-
-              // @details 내용이 존재하지 않다면 data 태그의 기본값으로 되돌린다.
-              content.textContent = content.dataset.default;
-
-            } else {
-              // @details 내용의 수정이 완료되었다면 data 태그의 기본값도 바꿔준다.
-              content.dataset.default = content.textContent;
-
-            }
-            // @breif 수정 불가 상태로 되돌린다.
-            content.contentEditable = false;
-            content.style.border = "0px";
-          }
-
-        });
-
-      });
-
-    });
-    
-    $(function () {
-        $(".answer_insert").click(function () {
-            $("#form1").removeClass("hide");
-        });
-    });
-  </script>
-  
+		<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
   <script>
   $().ready(function () {
 	    $(".qna_del").click(function () {
@@ -494,8 +289,8 @@
 	        }).then((result) => {
 	            if (result.isConfirmed) {
 	                Swal.fire(
-	                    '문의가 삭제되었습니다.',
-	                    '혹은 비밀번호가 일치하지 않습니다.'
+	                    '',
+	                    '문의가 삭제되었습니다. 혹은 비밀번호가 일치하지 않습니다.'
 	                )
 	            }
 	        })
@@ -564,7 +359,38 @@
 	        })
 	    });
 	});
+	
+  	$(function (){
+	  	$(".answer_insert").click(function (){
+  			$(".form1").removeClass("hide");
+  		});
+  	});
   </script>
+  <script>
+	  // 메인화면 페이지 로드 함수
+    $(document).ready(function () {
+        $('.summernote').summernote({
+            placeholder: '내용을 작성하세요',
+            height: 400,
+            maxHeight: 400,
+            tabsize:2,
+            toolbar: [
+			    // [groupName, [list of button]]
+			    ['fontname', ['fontname']],
+			    ['fontsize', ['fontsize']],
+			    ['style', ['bold', 'italic', 'underline','strikethrough', 'clear']],
+			    ['color', ['forecolor','color']],
+			    ['table', ['table']],
+			    ['para', ['ul', 'ol', 'paragraph']],
+			    ['height', ['height']],
+			    ['insert',['picture','link','video']],
+			    ['view', ['codeview', 'help']]
+			  ],
+			fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New','맑은 고딕','궁서','굴림체','굴림','돋움체','바탕체'],
+			fontSizes: ['8','9','10','11','12','14','16','18','20','22','24','28','30','36','50','72']
+        });
+    });
+</script>	
 </body>
 
 </html>

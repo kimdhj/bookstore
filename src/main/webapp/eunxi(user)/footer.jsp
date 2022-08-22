@@ -137,7 +137,8 @@
     <script src="lib/wow/wow.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $("#chat_button").click(function () {
@@ -560,15 +561,32 @@
             });
             search_btn
         });
-        
-        $(document).ready(function () {
-            $('#summernote').summernote({
-                placeholder: '내용을 작성하세요',
-                height: 400,
-                maxHeight: 400
-            });
-        });
 
     </script>
+	<script>
+			  // 메인화면 페이지 로드 함수
+		    $(document).ready(function () {
+		        $('.summernote').summernote({
+		            placeholder: '내용을 작성하세요',
+		            height: 400,
+		            maxHeight: 400,
+		            tabsize:2,
+		            toolbar: [
+					    // [groupName, [list of button]]
+					    ['fontname', ['fontname']],
+					    ['fontsize', ['fontsize']],
+					    ['style', ['bold', 'italic', 'underline','strikethrough', 'clear']],
+					    ['color', ['forecolor','color']],
+					    ['table', ['table']],
+					    ['para', ['ul', 'ol', 'paragraph']],
+					    ['height', ['height']],
+					    ['insert',['picture','link','video']],
+					    ['view', ['fullscreen', 'help']]
+					  ],
+					fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New','맑은 고딕','궁서','굴림체','굴림','돋움체','바탕체'],
+					fontSizes: ['8','9','10','11','12','14','16','18','20','22','24','28','30','36','50','72']
+		        });
+		    });
+		</script>
 </body>
 </html>

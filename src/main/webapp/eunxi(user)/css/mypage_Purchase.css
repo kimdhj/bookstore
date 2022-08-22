@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+.bookBox{
+	margin-top: 2%;
+}
 #purchaseList_name{
 	margin-top: 4%;
 }
@@ -7,7 +10,7 @@
 	margin: auto;
 }
 #purchaseList_title{
-	margin-top: 6%;
+	margin-top: 3%;
 }
 
 #datepicker{
@@ -36,6 +39,8 @@
 
 .purchaseList_btns{
 	padding-top: 20px;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 .purchaseList_btns>*>*{
 	margin: auto;

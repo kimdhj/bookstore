@@ -2,11 +2,8 @@
 	pageEncoding="UTF-8"%>
 <head>
 <jsp:include page="./header.jsp"></jsp:include>
-
-<link href="./datepicker/css/datepicker.min.css" rel="stylesheet"
-	type="text/css" media="all">
+<link href="./datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" media="all">
 <link href="./css/mypage_Purchase.css" rel="stylesheet">
-
 </head>
 <!-- Page Header Start -->
 <div class="container-fluid page-header wow fadeIn"
@@ -188,8 +185,8 @@
 						<div class="col-8" id="day_select">
 							<div id="day_calendar" class="col-5">
 								<input class="col-5" placeholder="시작날짜" type="text"
-									id="start_date" />~<input class="col-5" placeholder="마지막 날짜"
-									type="text" id="end_date" />
+									id="start_date" style="text-align: center;"/>~<input class="col-5" placeholder="마지막 날짜"
+									type="text" id="end_date" style="text-align: center;"/>
 							</div>
 							<div id="day_btn" class="col-7">
 								<div id="dayAdd" class="btn-group me-2" role="group"
@@ -213,7 +210,7 @@
 									<option value="1">가격</option>
 									<option value="2">장르</option>
 								</select>
-							</div>
+							</div>&nbsp;
 							<div class="col" id="option_input">
 								<div class="input-group mb-3 ">
 									<input type="text" class="form-control"
@@ -233,13 +230,13 @@
 						<div class="col-2 purchaseList_img">
 							<img width="100%" src="./img/product1-8.jpg">
 						</div>
-						<div class="col-8">
+						<div class="col-8 bookBox">
 							<h4 id="purchaseList_title">해리포터</h4>
 							<div class="row">
 								<div class="col-8">바보 | 2022.07.23</div>
 							</div>
 							<div class="row">
-								<div class="col-7">발송완료</div>
+								<div class="col-7">배송준비중</div>
 								<div class="col-2">수량: 1개</div>
 							</div>
 							<div class="row">
@@ -250,10 +247,10 @@
 							</div>
 						</div>
 						<div class="col-2 purchaseList_btns">
-							<a href="./purchaseDetail.jsp"><button>배송조회</button></a> <a
-								href="./review.jsp"><button>리뷰작성</button></a> <a
-								href="./purchaseDetail.jsp"><button>구매상세</button></a> <a
-								href="#"><button class="purchaseCancel del">구매취소</button></a>
+							<a href="./purchaseDetail.jsp"><button>배송조회</button></a>
+							<a href="./review.jsp"><button>리뷰작성</button></a>
+							<a href="./purchaseDetail.jsp"><button>구매상세</button></a>
+							<a href="#"><button class="purchaseCancel">구매취소</button></a>
 						</div>
 					</div>
 				</div>
@@ -264,7 +261,7 @@
 						<div class="col-2 purchaseList_img">
 							<img width="100%" src="./img/product1-8.jpg">
 						</div>
-						<div class="col-8">
+						<div class="col-8 bookBox">
 							<h4 id="purchaseList_title">해리포터</h4>
 							<div class="row">
 								<div class="col-8">바보 | 2022.07.23</div>
@@ -281,10 +278,9 @@
 							</div>
 						</div>
 						<div class="col-2 purchaseList_btns">
-							<a href="./purchaseDetail.jsp"><button>배송조회</button></a> <a
-								href="./review.jsp"><button>리뷰작성</button></a> <a
-								href="./purchaseDetail.jsp"><button>구매상세</button></a> <a
-								href="#"><button class="purchaseCancel del">구매취소</button></a>
+							<a href="./purchaseDetail.jsp"><button>배송조회</button></a>
+							<a href="./review.jsp"><button>리뷰작성</button></a>
+							<a href="./purchaseDetail.jsp"><button>구매상세</button></a>
 						</div>
 					</div>
 				</div>
@@ -464,10 +460,6 @@
             });
 
         });
-        
-        $(".del").click(function (e) {
-            $(this).parents('tr').remove();
-          })
     </script>
 </body>
 </html>

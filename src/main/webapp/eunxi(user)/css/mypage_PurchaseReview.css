@@ -43,3 +43,12 @@
 	border-radius: 15px;
 	height: 220px;
 }
+
+.note-color-all button.active +.note-dropdown-menu>div:nth-child(2) {
+
+   display:none !important;
+}
+.note-color-all button.active +.note-dropdown-menu {
+
+   min-width:0px !important;
+}
