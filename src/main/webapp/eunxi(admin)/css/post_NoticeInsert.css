@@ -35,23 +35,10 @@ div.bg-white {
 #cate_box {
   display: none;
 }
-
-.hide{
-	display: none !important;
-}
-
-#Content {
-  height: 50vh;
-  overflow: auto;
-}
-
-#input_line_top *{
-	font-size: 1vw;
-}
-
-.qnaDetail_font{
+.notice_font{
 	font-weight: bolder;
 }
+
 
 .note-color-all button.active +.note-dropdown-menu>div:nth-child(2) {
 
@@ -76,19 +63,3 @@ div.bg-white {
 .note-modal-footer{
 	margin-bottom: 5%;
 }
-
-.bi-caret-right-fill:before{
-	content: '\25B6';
-}
-
-.bi-caret-left-fill:before{
-	content: '\25C0';
-}
-
-#buttons{
-	padding-right: 0px;
-	padding-left: 0px;
-	margin-left: 1px;
-}
-
-
