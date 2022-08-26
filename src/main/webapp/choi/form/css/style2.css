@@ -1,27 +1,9 @@
 /********** Template CSS **********/
-/*
 :root {
-<<<<<<< HEAD
-    --primary: #3CB815;
-    --secondary: #F65005;
-    --light: #F7F8FC;
-    --dark: #111111;
-    --lightv2: #2979FF; /* ���������� ���� �߰� 
-=======
   --primary: #3cb815;
   --secondary: #f65005;
   --light: #f7f8fc;
   --dark: #111111;
->>>>>>> 1b419b57f8000768bd50091f70980a96368b9e96
-}
-*/
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 30px;
-  bottom: 30px;
-  z-index: 99;
 }
 
 .my-6 {
@@ -57,7 +39,6 @@
 .btn {
   font-weight: 500;
 }
-
 
 .btn.btn-primary,
 .btn.btn-secondary,
@@ -406,56 +387,4 @@
 
 .footer .copyright a:hover {
   color: var(--primary);
-}
-
-/* ------------- */
-
-#left_bar{
-	background-color: #e2e2bd !important;
-}
-
-.booklist{
-	border: 1px solid black;
-}
-
-.img_booklist_kr{
-	height: 100%;
-}
-
-.tag_booklist_kr{
-	margin : 20 30 20 20;
-}
-
-#menu_bar{
-	padding-top:2%;
-}
-
-#purchase01{
-	padding-top:30%;
-}
-
-#purchase02{
-	padding-top:10%;
-}
-
-.btnSubmit{
-	margin:auto;
-    display:block;
-}
-
-#best_price{
-	padding-top:10%;
-}
-
-
-#best_context{
-	padding-top:10%;
-}
-
-#nav-home{
-	padding-top:2%;
-}
-
-#list_book{
-	padding-top:2%;
 }
